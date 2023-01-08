@@ -16,7 +16,7 @@ import {
 const InterestsAccordian = () => {
   return (
     <Box>
-      <Heading>Get to know me</Heading>
+      <Heading>My Past </Heading>
       <Accordion>
         <AccordionItem>
           <h2>

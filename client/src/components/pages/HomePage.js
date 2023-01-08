@@ -7,7 +7,8 @@ import {
   VStack,
   Divider,
   IconButton,
-  chakra
+  chakra,
+  Tooltip
 } from '@chakra-ui/react'
 
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
@@ -20,9 +21,10 @@ const HomePage = () => {
   return (
     <Box>
       <HStack>
-        <Box>LH</Box>
-        <Box>Projects</Box>
-        <Box>Contacts</Box>
+        <Text>LH</Text>
+        <Text>Projects</Text>
+        <Text>Previous</Text>
+        <Text>Adventure</Text>
       </HStack>
       <HStack>
         <Avatar
@@ -37,42 +39,50 @@ const HomePage = () => {
             Passion for Adventure Sports!
           </Heading>
           <HStack>
-            <IconButton
-              colorScheme="teal"
-              aria-label="GitHub"
-              size="lg"
-              variant="outline"
-              icon={<AiFillGithub />}
-              as="a"
-              href="https://github.com/LucyHeath"
-              isExternal
-              target="_blank"
-            />
-            <IconButton
-              colorScheme="teal"
-              aria-label="LinkedIn"
-              size="lg"
-              variant="outline"
-              icon={<AiFillLinkedin />}
-              as="a"
-              href="https://www.linkedin.com/in/lucy-e-heath/"
-              isExternal
-              target="_blank"
-            />
+            <Tooltip label="GitHub" fontSize="md">
+              <chakra.span>
+                <IconButton
+                  colorScheme="grey"
+                  aria-label="GitHub"
+                  size="lg"
+                  variant="outline"
+                  icon={<AiFillGithub />}
+                  as="a"
+                  href="https://github.com/LucyHeath"
+                  isExternal
+                  target="_blank"
+                />
+              </chakra.span>
+            </Tooltip>
+            <Tooltip label="LinedIn" fontSize="md">
+              <chakra.span>
+                <IconButton
+                  colorScheme="grey"
+                  aria-label="LinkedIn"
+                  size="lg"
+                  variant="outline"
+                  icon={<AiFillLinkedin />}
+                  as="a"
+                  href="https://www.linkedin.com/in/lucy-e-heath/"
+                  isExternal
+                  target="_blank"
+                />
+              </chakra.span>
+            </Tooltip>
           </HStack>
         </VStack>
       </HStack>
       <InfoTabs />
       <Divider />
 
-      <Heading>Projects</Heading>
+      <Heading>My Projects</Heading>
       <ProjectCards />
       <Divider />
       <InterestsAccordian />
       <Heading>My Adventures</Heading>
       <Text>Some text and image carousel?</Text>
       <VStack>
-        <Heading>Contact</Heading>
+        <Heading>Contact Me</Heading>
         <Text>
           Reach me on
           <chakra.span

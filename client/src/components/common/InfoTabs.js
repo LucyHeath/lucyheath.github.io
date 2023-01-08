@@ -14,9 +14,9 @@ const InfoTabs = () => {
     <>
       <Tabs isFitted variant="enclosed">
         <TabList mb="1em">
-          <Tab>About me</Tab>
-          <Tab>Skills</Tab>
-          <Tab>Experience</Tab>
+          <Tab>About Me</Tab>
+          <Tab>My Skills</Tab>
+          <Tab>My Experience</Tab>
         </TabList>
         <TabPanels>
           <TabPanel>
