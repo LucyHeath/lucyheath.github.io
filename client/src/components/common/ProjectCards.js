@@ -17,7 +17,10 @@ import {
   ModalFooter,
   ModalBody,
   ModalCloseButton,
-  useDisclosure
+  useDisclosure,
+  UnorderedList,
+  ListItem,
+  Link
 } from '@chakra-ui/react'
 import React from 'react'
 const ProjectCards = () => {
@@ -35,6 +38,7 @@ const ProjectCards = () => {
         justifyItems="center"
         px="40px"
       >
+
         <Card maxW="md">
           <CardBody>
             <Image
@@ -83,40 +87,82 @@ const ProjectCards = () => {
                       General Assembly Engineering Immersive Course.
                     </Text>
                     <Heading>Brief</Heading>
-                    <Text>
-                      * **Build a full-stack application** by making your own
-                      backend and your own front-end. * **Use a Python Django
-                      API** using Django REST Framework to serve your data from
-                      a Postgres database. * **Consume your API with a separate
-                      front-end** built with React. * **Be a complete product**
-                      which most likely means multiple relationships and CRUD
-                      functionality for at least a couple of models. *
-                      **Implement thoughtful user stories/wireframes** that are
-                      significant enough to help you know which features are
-                      core MVP and which you can cut. * **Have a visually
-                      impressive design** to kick your portfolio up a notch and
-                      have something to wow future clients & employers. * **Be
-                      deployed online.
-                    </Text>
+                    <Divider />
+                    <UnorderedList>
+                      <ListItem>
+                        Build a full-stack application** by making your own
+                        backend and your own front-end.
+                      </ListItem>
+                      <ListItem>
+                        Use a Python Django API** using Django REST Framework to
+                        serve your data from a Postgres database.
+                      </ListItem>
+                      <ListItem>
+                        Consume your API with a separate front-end** built with
+                        React.
+                      </ListItem>
+                      <ListItem>
+                        Be a complete product** which most likely means multiple
+                        relationships and CRUD functionality for at least a
+                        couple of models.
+                      </ListItem>
+                      <ListItem>
+                        Implement thoughtful user stories/wireframes that are
+                        significant enough to help you know which features are
+                        core MVP and which you can cut.
+                      </ListItem>
+                      <ListItem>
+                        Have a visually impressive design** to kick your
+                        portfolio up a notch and have something to wow future
+                        clients & employers. * **Be deployed online.
+                      </ListItem>
+                    </UnorderedList>
                     <Heading>Features</Heading>
-                    <Text>
-                      * All users can browse the mountaineering routes index and
-                      refine choices with the difficulty filter, or search by
-                      route or peak name if they know what they are looking for.
-                      * All users can select an individual mountaineering route
-                      and click through to find out further information about,
-                      and view comments left by others. * Users must register
-                      for an account to be able to leave their own comments,
-                      upload four photos and ratings. * Users can edit and
-                      delete their own comments.{' '}
-                    </Text>
+                    <Divider />
+                    <UnorderedList>
+                      <ListItem>
+                        All users can browse the mountaineering routes index and
+                        refine choices with the difficulty filter, or search by
+                        route or peak name if they know what they are looking
+                        for.
+                      </ListItem>
+                      <ListItem>
+                        All users can select an individual mountaineering route
+                        and click through to find out further information about,
+                        and view comments left by others.
+                      </ListItem>
+                      <ListItem>
+                        Users must register for an account to be able to leave
+                        their own comments, upload four photos and ratings.
+                      </ListItem>
+                      <ListItem>
+                        Users can edit and delete their own comments
+                      </ListItem>
+                    </UnorderedList>
                   </ModalBody>
                   <ModalFooter>
                     <Button onClick={onClose}>Close</Button>
+                    <Button
+                      variant="ghost"
+                      colorScheme="blue"
+                      as="a"
+                      href="https://bit.ly/Champeakx_README"
+                      isExternal
+                      target="_blank"
+                    >
+                      Full README
+                    </Button>
                   </ModalFooter>
                 </ModalContent>
               </Modal>
-              <Button variant="ghost" colorScheme="blue">
+              <Button
+                variant="ghost"
+                colorScheme="blue"
+                as="a"
+                href="http://bit.ly/Champeakx"
+                isExternal
+                target="_blank"
+              >
                 View site
               </Button>
             </ButtonGroup>
@@ -171,40 +217,82 @@ const ProjectCards = () => {
                       General Assembly Engineering Immersive Course.
                     </Text>
                     <Heading>Brief</Heading>
-                    <Text>
-                      * **Build a full-stack application** by making your own
-                      backend and your own front-end. * **Use a Python Django
-                      API** using Django REST Framework to serve your data from
-                      a Postgres database. * **Consume your API with a separate
-                      front-end** built with React. * **Be a complete product**
-                      which most likely means multiple relationships and CRUD
-                      functionality for at least a couple of models. *
-                      **Implement thoughtful user stories/wireframes** that are
-                      significant enough to help you know which features are
-                      core MVP and which you can cut. * **Have a visually
-                      impressive design** to kick your portfolio up a notch and
-                      have something to wow future clients & employers. * **Be
-                      deployed online.
-                    </Text>
+                    <Divider />
+                    <UnorderedList>
+                      <ListItem>
+                        Build a full-stack application** by making your own
+                        backend and your own front-end.
+                      </ListItem>
+                      <ListItem>
+                        Use a Python Django API** using Django REST Framework to
+                        serve your data from a Postgres database.
+                      </ListItem>
+                      <ListItem>
+                        Consume your API with a separate front-end** built with
+                        React.
+                      </ListItem>
+                      <ListItem>
+                        Be a complete product** which most likely means multiple
+                        relationships and CRUD functionality for at least a
+                        couple of models.
+                      </ListItem>
+                      <ListItem>
+                        Implement thoughtful user stories/wireframes that are
+                        significant enough to help you know which features are
+                        core MVP and which you can cut.
+                      </ListItem>
+                      <ListItem>
+                        Have a visually impressive design** to kick your
+                        portfolio up a notch and have something to wow future
+                        clients & employers. * **Be deployed online.
+                      </ListItem>
+                    </UnorderedList>
                     <Heading>Features</Heading>
-                    <Text>
-                      * All users can browse the mountaineering routes index and
-                      refine choices with the difficulty filter, or search by
-                      route or peak name if they know what they are looking for.
-                      * All users can select an individual mountaineering route
-                      and click through to find out further information about,
-                      and view comments left by others. * Users must register
-                      for an account to be able to leave their own comments,
-                      upload four photos and ratings. * Users can edit and
-                      delete their own comments.{' '}
-                    </Text>
+                    <Divider />
+                    <UnorderedList>
+                      <ListItem>
+                        All users can browse the mountaineering routes index and
+                        refine choices with the difficulty filter, or search by
+                        route or peak name if they know what they are looking
+                        for.
+                      </ListItem>
+                      <ListItem>
+                        All users can select an individual mountaineering route
+                        and click through to find out further information about,
+                        and view comments left by others.
+                      </ListItem>
+                      <ListItem>
+                        Users must register for an account to be able to leave
+                        their own comments, upload four photos and ratings.
+                      </ListItem>
+                      <ListItem>
+                        Users can edit and delete their own comments
+                      </ListItem>
+                    </UnorderedList>
                   </ModalBody>
                   <ModalFooter>
                     <Button onClick={onClose}>Close</Button>
+                    <Button
+                      variant="ghost"
+                      colorScheme="blue"
+                      as="a"
+                      href="https://bit.ly/Champeakx_README"
+                      isExternal
+                      target="_blank"
+                    >
+                      Full README
+                    </Button>
                   </ModalFooter>
                 </ModalContent>
               </Modal>
-              <Button variant="ghost" colorScheme="blue">
+              <Button
+                variant="ghost"
+                colorScheme="blue"
+                as="a"
+                href="http://bit.ly/Champeakx"
+                isExternal
+                target="_blank"
+              >
                 View site
               </Button>
             </ButtonGroup>
@@ -259,40 +347,82 @@ const ProjectCards = () => {
                       General Assembly Engineering Immersive Course.
                     </Text>
                     <Heading>Brief</Heading>
-                    <Text>
-                      * **Build a full-stack application** by making your own
-                      backend and your own front-end. * **Use a Python Django
-                      API** using Django REST Framework to serve your data from
-                      a Postgres database. * **Consume your API with a separate
-                      front-end** built with React. * **Be a complete product**
-                      which most likely means multiple relationships and CRUD
-                      functionality for at least a couple of models. *
-                      **Implement thoughtful user stories/wireframes** that are
-                      significant enough to help you know which features are
-                      core MVP and which you can cut. * **Have a visually
-                      impressive design** to kick your portfolio up a notch and
-                      have something to wow future clients & employers. * **Be
-                      deployed online.
-                    </Text>
+                    <Divider />
+                    <UnorderedList>
+                      <ListItem>
+                        Build a full-stack application** by making your own
+                        backend and your own front-end.
+                      </ListItem>
+                      <ListItem>
+                        Use a Python Django API** using Django REST Framework to
+                        serve your data from a Postgres database.
+                      </ListItem>
+                      <ListItem>
+                        Consume your API with a separate front-end** built with
+                        React.
+                      </ListItem>
+                      <ListItem>
+                        Be a complete product** which most likely means multiple
+                        relationships and CRUD functionality for at least a
+                        couple of models.
+                      </ListItem>
+                      <ListItem>
+                        Implement thoughtful user stories/wireframes that are
+                        significant enough to help you know which features are
+                        core MVP and which you can cut.
+                      </ListItem>
+                      <ListItem>
+                        Have a visually impressive design** to kick your
+                        portfolio up a notch and have something to wow future
+                        clients & employers. * **Be deployed online.
+                      </ListItem>
+                    </UnorderedList>
                     <Heading>Features</Heading>
-                    <Text>
-                      * All users can browse the mountaineering routes index and
-                      refine choices with the difficulty filter, or search by
-                      route or peak name if they know what they are looking for.
-                      * All users can select an individual mountaineering route
-                      and click through to find out further information about,
-                      and view comments left by others. * Users must register
-                      for an account to be able to leave their own comments,
-                      upload four photos and ratings. * Users can edit and
-                      delete their own comments.{' '}
-                    </Text>
+                    <Divider />
+                    <UnorderedList>
+                      <ListItem>
+                        All users can browse the mountaineering routes index and
+                        refine choices with the difficulty filter, or search by
+                        route or peak name if they know what they are looking
+                        for.
+                      </ListItem>
+                      <ListItem>
+                        All users can select an individual mountaineering route
+                        and click through to find out further information about,
+                        and view comments left by others.
+                      </ListItem>
+                      <ListItem>
+                        Users must register for an account to be able to leave
+                        their own comments, upload four photos and ratings.
+                      </ListItem>
+                      <ListItem>
+                        Users can edit and delete their own comments
+                      </ListItem>
+                    </UnorderedList>
                   </ModalBody>
                   <ModalFooter>
                     <Button onClick={onClose}>Close</Button>
+                    <Button
+                      variant="ghost"
+                      colorScheme="blue"
+                      as="a"
+                      href="https://bit.ly/Champeakx_README"
+                      isExternal
+                      target="_blank"
+                    >
+                      Full README
+                    </Button>
                   </ModalFooter>
                 </ModalContent>
               </Modal>
-              <Button variant="ghost" colorScheme="blue">
+              <Button
+                variant="ghost"
+                colorScheme="blue"
+                as="a"
+                href="http://bit.ly/Champeakx"
+                isExternal
+                target="_blank"
+              >
                 View site
               </Button>
             </ButtonGroup>
@@ -347,45 +477,89 @@ const ProjectCards = () => {
                       General Assembly Engineering Immersive Course.
                     </Text>
                     <Heading>Brief</Heading>
-                    <Text>
-                      * **Build a full-stack application** by making your own
-                      backend and your own front-end. * **Use a Python Django
-                      API** using Django REST Framework to serve your data from
-                      a Postgres database. * **Consume your API with a separate
-                      front-end** built with React. * **Be a complete product**
-                      which most likely means multiple relationships and CRUD
-                      functionality for at least a couple of models. *
-                      **Implement thoughtful user stories/wireframes** that are
-                      significant enough to help you know which features are
-                      core MVP and which you can cut. * **Have a visually
-                      impressive design** to kick your portfolio up a notch and
-                      have something to wow future clients & employers. * **Be
-                      deployed online.
-                    </Text>
+                    <Divider />
+                    <UnorderedList>
+                      <ListItem>
+                        Build a full-stack application** by making your own
+                        backend and your own front-end.
+                      </ListItem>
+                      <ListItem>
+                        Use a Python Django API** using Django REST Framework to
+                        serve your data from a Postgres database.
+                      </ListItem>
+                      <ListItem>
+                        Consume your API with a separate front-end** built with
+                        React.
+                      </ListItem>
+                      <ListItem>
+                        Be a complete product** which most likely means multiple
+                        relationships and CRUD functionality for at least a
+                        couple of models.
+                      </ListItem>
+                      <ListItem>
+                        Implement thoughtful user stories/wireframes that are
+                        significant enough to help you know which features are
+                        core MVP and which you can cut.
+                      </ListItem>
+                      <ListItem>
+                        Have a visually impressive design** to kick your
+                        portfolio up a notch and have something to wow future
+                        clients & employers. * **Be deployed online.
+                      </ListItem>
+                    </UnorderedList>
                     <Heading>Features</Heading>
-                    <Text>
-                      * All users can browse the mountaineering routes index and
-                      refine choices with the difficulty filter, or search by
-                      route or peak name if they know what they are looking for.
-                      * All users can select an individual mountaineering route
-                      and click through to find out further information about,
-                      and view comments left by others. * Users must register
-                      for an account to be able to leave their own comments,
-                      upload four photos and ratings. * Users can edit and
-                      delete their own comments.{' '}
-                    </Text>
+                    <Divider />
+                    <UnorderedList>
+                      <ListItem>
+                        All users can browse the mountaineering routes index and
+                        refine choices with the difficulty filter, or search by
+                        route or peak name if they know what they are looking
+                        for.
+                      </ListItem>
+                      <ListItem>
+                        All users can select an individual mountaineering route
+                        and click through to find out further information about,
+                        and view comments left by others.
+                      </ListItem>
+                      <ListItem>
+                        Users must register for an account to be able to leave
+                        their own comments, upload four photos and ratings.
+                      </ListItem>
+                      <ListItem>
+                        Users can edit and delete their own comments
+                      </ListItem>
+                    </UnorderedList>
                   </ModalBody>
                   <ModalFooter>
                     <Button onClick={onClose}>Close</Button>
+                    <Button
+                      variant="ghost"
+                      colorScheme="blue"
+                      as="a"
+                      href="https://bit.ly/Champeakx_README"
+                      isExternal
+                      target="_blank"
+                    >
+                      Full README
+                    </Button>
                   </ModalFooter>
                 </ModalContent>
               </Modal>
-              <Button variant="ghost" colorScheme="blue">
+              <Button
+                variant="ghost"
+                colorScheme="blue"
+                as="a"
+                href="http://bit.ly/Champeakx"
+                isExternal
+                target="_blank"
+              >
                 View site
               </Button>
             </ButtonGroup>
           </CardFooter>
         </Card>
+
+        
       </SimpleGrid>
     </>
   )

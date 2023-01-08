@@ -6,7 +6,8 @@ import {
   Text,
   VStack,
   Divider,
-  IconButton
+  IconButton,
+  chakra
 } from '@chakra-ui/react'
 
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
@@ -42,6 +43,10 @@ const HomePage = () => {
               size="lg"
               variant="outline"
               icon={<AiFillGithub />}
+              as="a"
+              href="https://github.com/LucyHeath"
+              isExternal
+              target="_blank"
             />
             <IconButton
               colorScheme="teal"
@@ -49,6 +54,10 @@ const HomePage = () => {
               size="lg"
               variant="outline"
               icon={<AiFillLinkedin />}
+              as="a"
+              href="https://www.linkedin.com/in/lucy-e-heath/"
+              isExternal
+              target="_blank"
             />
           </HStack>
         </VStack>
@@ -60,9 +69,22 @@ const HomePage = () => {
       <ProjectCards />
       <Divider />
       <InterestsAccordian />
+      <Heading>My Adventures</Heading>
+      <Text>Some text and image carousel?</Text>
       <VStack>
         <Heading>Contact</Heading>
-        <Text>Reach me on LinkedIn/in/lucy-e-heath or via email</Text>
+        <Text>
+          Reach me on
+          <chakra.span
+            as="a"
+            href="https://www.linkedin.com/in/lucy-e-heath/"
+            isExternal
+            target="_blank"
+          >
+            LinkedIn
+          </chakra.span>{' '}
+          or email
+        </Text>
       </VStack>
     </Box>
   )
