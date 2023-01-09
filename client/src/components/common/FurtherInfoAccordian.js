@@ -14,7 +14,7 @@ import {
 const FurtherInfoAccordian = () => {
   return (
     <Box backgroundColour="white" p={('1em', '3em', '6em')}>
-      <Heading>My Past </Heading>
+      <Heading pb="1em">My Past </Heading>
       <Divider />
       <Accordion>
         <AccordionItem>

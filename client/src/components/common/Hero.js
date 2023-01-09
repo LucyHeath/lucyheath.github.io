@@ -34,12 +34,12 @@ const Hero = () => {
         mr={['1em', '6em', '6em']}
         pr={['6em']}
       >
-        <Heading textColor="white" size={['xl']}>
+        <Heading textColor="white" size={['xl']} pb="0.5em">
           {' '}
           Hi, i&#39;m Lucy Heath
         </Heading>
         <Divider />
-        <Heading textColor="white" pb={'1em'} size="lg">
+        <Heading textColor="white" pb={'1em'} size="lg" pt="1em">
           Junior Software Engineer with 10 Years Healthcare Expertise and a
           Passion for Adventure Sports!
         </Heading>

@@ -2,8 +2,8 @@ import { Divider, Text, Heading, VStack, chakra } from '@chakra-ui/react'
 
 const ContactSection = () => {
   return (
-    <VStack>
-      <Heading>Contact Me</Heading>
+    <VStack >
+      <Heading pb="1em ">Contact Me</Heading>
       <Divider />
       <Text>
         Reach me on

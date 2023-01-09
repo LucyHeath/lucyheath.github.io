@@ -32,7 +32,9 @@ const ProjectCards = () => {
 
   return (
     <Box p={('1em', '3em', '6em')} bgColor="#375b6d">
-      <Heading textColor={'white'}>My Projects</Heading>
+      <Heading textColor={'white'} pb="1em">
+        My Projects
+      </Heading>
       <Divider />
       <SimpleGrid
         columns={{ sm: 2, md: 2, lg: 4 }}
@@ -43,7 +45,7 @@ const ProjectCards = () => {
         justifyItems="center"
         px="40px"
       >
-        <Card backgroundColor="#0e3849" maxW="md">
+        <Card pt="1em" backgroundColor="#0e3849" maxW="md">
           <CardBody>
             <Image
               src="https://i.imgur.com/pfOfxE2.png"
