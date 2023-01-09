@@ -22,7 +22,8 @@ import {
   ListItem,
   HStack,
   Tooltip,
-  chakra
+  chakra,
+  Box
 } from '@chakra-ui/react'
 import { FaReact, FaPython } from 'react-icons/fa'
 import { DiDjango } from 'react-icons/di'
@@ -31,7 +32,9 @@ const ProjectCards = () => {
   // const [scrollBehavior, setScrollBehavior] = React.useState('inside')
 
   return (
-    <>
+    <Box m={('1em', '3em', '6em')}>
+      <Heading>My Projects</Heading>
+      <Divider />
       <SimpleGrid
         columns={{ sm: 2, md: 2, lg: 4 }}
         pt="2rem"
@@ -181,7 +184,7 @@ const ProjectCards = () => {
           </CardFooter>
         </Card>
       </SimpleGrid>
-    </>
+    </Box>
   )
 }
 

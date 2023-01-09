@@ -6,12 +6,13 @@ import {
   TabPanels,
   Tab,
   TabPanel,
-  Heading
+  Heading,
+  Box
 } from '@chakra-ui/react'
 
 const InfoTabs = () => {
   return (
-    <>
+    <Box m={('1em', '3em', '6em')}>
       <Tabs isFitted variant="enclosed">
         <TabList mb="1em">
           <Tab>About Me</Tab>
@@ -84,7 +85,7 @@ const InfoTabs = () => {
           </TabPanel>
         </TabPanels>
       </Tabs>
-    </>
+    </Box>
   )
 }
 
