@@ -13,9 +13,11 @@ import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 const Hero = () => {
   return (
     <HStack
-      m={[4, 5]}
+      p={[4, 5]}
       justtifyContent={['center']}
       flexDirection={['column', 'row']}
+      px={['0.5em']}
+      bgColor="#375b6d"
     >
       <Avatar
         name="Lucy Heath"
@@ -32,9 +34,12 @@ const Hero = () => {
         mr={['1em', '6em', '6em']}
         pr={['6em']}
       >
-        <Heading size={['xl']}> Hi, i&#39;m Lucy Heath</Heading>
+        <Heading textColor="white" size={['xl']}>
+          {' '}
+          Hi, i&#39;m Lucy Heath
+        </Heading>
         <Divider />
-        <Heading pb={'1em'} size="lg">
+        <Heading textColor="white" pb={'1em'} size="lg">
           Junior Software Engineer with 10 Years Healthcare Expertise and a
           Passion for Adventure Sports!
         </Heading>
@@ -42,7 +47,7 @@ const Hero = () => {
           <Tooltip label="GitHub" fontSize="md">
             <chakra.span mr={'1em'}>
               <IconButton
-                colorScheme="grey"
+                colorScheme="#ffffff"
                 aria-label="GitHub"
                 size="lg"
                 variant="outline"

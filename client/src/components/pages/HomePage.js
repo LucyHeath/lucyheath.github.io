@@ -10,7 +10,7 @@ import ContactSection from '../common/ContactSection'
 
 const HomePage = () => {
   return (
-    <Box>
+    <Box >
       <Navbar />
       <Hero />
       <InfoTabs />

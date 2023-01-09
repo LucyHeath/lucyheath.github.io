@@ -29,11 +29,10 @@ import { FaReact, FaPython } from 'react-icons/fa'
 import { DiDjango } from 'react-icons/di'
 const ProjectCards = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
-  // const [scrollBehavior, setScrollBehavior] = React.useState('inside')
 
   return (
-    <Box m={('1em', '3em', '6em')}>
-      <Heading>My Projects</Heading>
+    <Box p={('1em', '3em', '6em')} bgColor="#375b6d">
+      <Heading textColor={'white'}>My Projects</Heading>
       <Divider />
       <SimpleGrid
         columns={{ sm: 2, md: 2, lg: 4 }}
@@ -44,7 +43,7 @@ const ProjectCards = () => {
         justifyItems="center"
         px="40px"
       >
-        <Card maxW="md">
+        <Card backgroundColor="#0e3849" maxW="md">
           <CardBody>
             <Image
               src="https://i.imgur.com/pfOfxE2.png"
@@ -52,8 +51,10 @@ const ProjectCards = () => {
               borderRadius="lg"
             />
             <Stack mt="6" spacing="3">
-              <Heading size="md">Champeakx</Heading>
-              <Text>
+              <Heading textColor="white" size="md">
+                Champeakx
+              </Heading>
+              <Text textColor="white" fontColor="white">
                 {' '}
                 A full-stack app that allows people to view information about
                 mountaineering routes in Chamonix. Users may create an account
@@ -61,7 +62,7 @@ const ProjectCards = () => {
                 routes they have completed, which provides useful beta to the
                 wider mountaineering community.
               </Text>
-              <Text color="blue.600" fontSize="2xl">
+              <Text color="white" fontSize="2xl">
                 <HStack alignContent="center">
                   <Tooltip label="React" fontSize="md">
                     <chakra.span>
@@ -85,7 +86,7 @@ const ProjectCards = () => {
           <Divider />
           <CardFooter>
             <ButtonGroup spacing="2">
-              <Button variant="solid" colorScheme="blue" onClick={onOpen}>
+              <Button variant="solid" color="#0e3849" onClick={onOpen}>
                 Read more
               </Button>
               <Modal
@@ -159,7 +160,8 @@ const ProjectCards = () => {
                     <Button onClick={onClose}>Close</Button>
                     <Button
                       variant="ghost"
-                      colorScheme="blue"
+                      colorScheme="#0e3849"
+                      textDecor="underline"
                       as="a"
                       href="https://bit.ly/Champeakx_README"
                       isExternal
@@ -171,8 +173,9 @@ const ProjectCards = () => {
                 </ModalContent>
               </Modal>
               <Button
+                textDecoration="underline"
+                textColor="white"
                 variant="ghost"
-                colorScheme="blue"
                 as="a"
                 href="http://bit.ly/Champeakx"
                 isExternal

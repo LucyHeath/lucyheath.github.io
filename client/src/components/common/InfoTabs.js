@@ -7,21 +7,29 @@ import {
   Tab,
   TabPanel,
   Heading,
-  Box
+  Box,
+  chakra
 } from '@chakra-ui/react'
 
 const InfoTabs = () => {
   return (
-    <Box m={('1em', '3em', '6em')}>
+    <Box backgroundColor={'white'} p={('1em', '3em', '6em')}>
       <Tabs isFitted variant="enclosed">
         <TabList mb="1em">
-          <Tab>About Me</Tab>
-          <Tab>My Skills</Tab>
-          <Tab>My Experience</Tab>
+          <Tab color="#55595b" fontWeight="bold">
+            {' '}
+            About Me
+          </Tab>
+          <Tab color="#55595b" fontWeight="bold">
+            My Skills
+          </Tab>
+          <Tab color="#55595b" fontWeight="bold">
+            My Experience
+          </Tab>
         </TabList>
         <TabPanels>
           <TabPanel>
-            <Text>
+            <Text color="#55595b">
               I have had a successful and fulfilling career in the NHS as a
               physiotherapist and manager, but after 10 years and having
               achieved my personal goals I am looking for a new challenge that
@@ -37,21 +45,28 @@ const InfoTabs = () => {
             </Text>
           </TabPanel>
           <TabPanel>
-            <Heading>Technical Skills</Heading>
+            <Heading textColor="#55595b" pb="1em">
+              Technical Skills
+            </Heading>
             <Divider />
             <Text>
-              Frontend: HTML5, CSS3, JavaScript, React.js, Sass, Bootstrap,
-              Chakra UI{' '}
+              <chakra.span fontWeight="bold">Frontend:</chakra.span> HTML5,
+              CSS3, JavaScript, React.js, Sass, Bootstrap, Chakra UI{' '}
             </Text>
             <Text>
-              Backend: Node.js, Express.js, MongoDB, Mongoose, Python, Django,
-              SQL, PostgreSQL, TablePlus, Insomnia, Django REST Framework{' '}
+              <chakra.span fontWeight="bold"> Backend:</chakra.span> Node.js,
+              Express.js, MongoDB, Mongoose, Python, Django, SQL, PostgreSQL,
+              TablePlus, Insomnia, Django REST Framework{' '}
             </Text>
             <Text>
-              Other: Github, VSCODE, RESTful APIs, Yarn, npm, Pip, Pipenv,
-              Heroku, Chrome Dev tools, Command line, Trello, Slack, Wireframing
+              <chakra.span fontWeight="bold"> Development Tools: </chakra.span>
+              Github | VSCODE | RESTful APIs | yarn | npm | Pip | Pipenv |
+              Heroku | Chrome Dev tools |Command line | Trello| Slack|
+              Excallidraw| Zoom
             </Text>
-            <Heading>Soft Skills</Heading>
+            <Heading textColor="#55595b" pb="1em">
+              Soft Skills
+            </Heading>
             <Divider />
             <Text>
               I’ve demonstrated an exemplary aptitude for rapid problem solving,
