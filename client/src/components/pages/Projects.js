@@ -58,6 +58,7 @@ const ProjectCards = () => {
         justifyItems="center"
         px="40px"
       >
+        {/* Champeaks */}
         <Card
           maxHeight={'750px'}
           maxWidth={'600px'}
@@ -66,7 +67,6 @@ const ProjectCards = () => {
           px="2em"
           py="2em"
           backgroundColor="#0e3849"
-          // maxW="md"
         >
           <CardBody>
             <Image
@@ -155,7 +155,7 @@ const ProjectCards = () => {
                         serve your data from a Postgres database.
                       </ListItem>
                       <ListItem>
-                        Consume your API with a separate Reac front-end.
+                        Consume your API with a separate React front-end.
                       </ListItem>
                       <ListItem>
                         Be a complete product with CRUD functionality.
@@ -224,6 +224,7 @@ const ProjectCards = () => {
           </CardFooter>
         </Card>
 
+        {/* Lay-by */}
         <Card
           maxHeight={'750px'}
           maxWidth={'600px'}
@@ -232,7 +233,6 @@ const ProjectCards = () => {
           px="2em"
           py="2em"
           backgroundColor="#0e3849"
-          // maxW="md"
         >
           <CardBody>
             <Image
@@ -314,7 +314,7 @@ const ProjectCards = () => {
                   <ModalCloseButton />
                   <ModalBody>
                     <Text pb={3}>
-                      This was the third project built in a group over 7 days
+                      This was the third project built with a group over 7 days
                       for the General Assembly Software Engineering Immersive
                       Course.
                     </Text>
@@ -325,11 +325,12 @@ const ProjectCards = () => {
                     <UnorderedList pb={3}>
                       <ListItem>Build a full-stack application.</ListItem>
                       <ListItem>
-                        Use a Python Django API using Django REST Framework to
-                        serve your data from a Postgres database.
+                        Use an Express API to serve your data from a Mongo
+                        database.
                       </ListItem>
                       <ListItem>
-                        Consume your API with a separate Reac front-end.
+                        Consume your API with a separate front-end built with
+                        React
                       </ListItem>
                       <ListItem>
                         Be a complete product with CRUD functionality.
@@ -348,22 +349,29 @@ const ProjectCards = () => {
                     <Divider />
                     <UnorderedList pb={3}>
                       <ListItem>
-                        All users can browse the mountaineering routes index and
-                        refine choices with the difficulty filter, or search by
-                        route or peak name if they know what they are looking
-                        for.
+                        All users can search for locations by name and filter
+                        search results by countries.
                       </ListItem>
                       <ListItem>
-                        All users can select an individual mountaineering route
-                        and click through to find out further information about,
-                        and view comments left by others.
+                        All users can view locations and detailed information
+                        about the site, including the average user rating and
+                        reviews left by other users.
                       </ListItem>
                       <ListItem>
-                        Users can register for an account to be able to leave
-                        their own comments, upload four photos and ratings.
+                        Users can register for an account which allows them to
+                        log in Logged in users can create, update and delete
+                        locations.
                       </ListItem>
                       <ListItem>
-                        Users can edit and delete their own comments
+                        Logged in users can write, edit and delete their own
+                        reviews of the locations.
+                      </ListItem>
+                      <ListItem>
+                        Logged in users can view their own profile page,which
+                        serves as a dashboard for their reviews.
+                      </ListItem>
+                      <ListItem>
+                        They can add a profile picture to personalise the page.
                       </ListItem>
                     </UnorderedList>
                   </ModalBody>
@@ -374,7 +382,7 @@ const ProjectCards = () => {
                       colorScheme="#0e3849"
                       textDecor="underline"
                       as="a"
-                      href="https://lay-by.herokuapp.com/"
+                      href="https://bit.ly/lay-by_README"
                       isExternal
                       target="_blank"
                     >
@@ -388,7 +396,7 @@ const ProjectCards = () => {
                 textColor="white"
                 variant="ghost"
                 as="a"
-                href="https://bit.ly/lay-by_README"
+                href="http://bit.ly/lay-by "
                 isExternal
                 target="_blank"
               >
@@ -398,6 +406,7 @@ const ProjectCards = () => {
           </CardFooter>
         </Card>
 
+        {/* Bored? */}
         <Card
           maxHeight={'750px'}
           maxWidth={'600px'}
@@ -406,7 +415,6 @@ const ProjectCards = () => {
           px="2em"
           py="2em"
           backgroundColor="#0e3849"
-          // maxW="md"
         >
           <CardBody>
             <Image
@@ -464,37 +472,32 @@ const ProjectCards = () => {
                 <ModalOverlay />
                 <ModalContent>
                   <ModalHeader size="lg" fontWeight="bold">
-                    Bored? - Project 2
+                    Champeaks - Project 4
                   </ModalHeader>
                   <ModalCloseButton />
                   <ModalBody>
                     <Text pb={3}>
-                      This was the second project built solo over 1.5 days for
-                      the General Assembly Software Engineering Immersive
-                      Course.
+                      This was the second project built with a group over 1.5
+                      days for the General Assembly Software Engineering
+                      Immersive Course.
                     </Text>
                     <Heading size="sm" pt={2} pb={3}>
                       Brief
                     </Heading>
                     <Divider />
                     <UnorderedList pb={3}>
-                      <ListItem>Build a full-stack application.</ListItem>
+                      <ListItem>Consume a public API.</ListItem>
+                      <ListItem>Have several components.</ListItem>
                       <ListItem>
-                        Use a Python Django API using Django REST Framework to
-                        serve your data from a Postgres database.
+                        The app can have a router with several
+                        &quot;pages&quot;.
                       </ListItem>
                       <ListItem>
-                        Consume your API with a separate Reac front-end.
+                        Include wireframes that you designed before building the
+                        app.
                       </ListItem>
                       <ListItem>
-                        Be a complete product with CRUD functionality.
-                      </ListItem>
-                      <ListItem>
-                        Implement thoughtful user stories/wireframes.
-                      </ListItem>
-                      <ListItem>
-                        Have a visually impressive design and be deployed
-                        online.
+                        Be deployed online and accessible to the public.
                       </ListItem>
                     </UnorderedList>
                     <Heading size="sm" pt={2} pb={3}>
@@ -503,22 +506,29 @@ const ProjectCards = () => {
                     <Divider />
                     <UnorderedList pb={3}>
                       <ListItem>
-                        All users can browse the mountaineering routes index and
-                        refine choices with the difficulty filter, or search by
-                        route or peak name if they know what they are looking
-                        for.
+                        A homepage that is simple, and centred on a striking Gif
+                        which sets the scene for the user.
                       </ListItem>
                       <ListItem>
-                        All users can select an individual mountaineering route
-                        and click through to find out further information about,
-                        and view comments left by others.
+                        A navbar that redirects the user to the homepage and
+                        activity page from anywhere on the site.
                       </ListItem>
                       <ListItem>
-                        Users can register for an account to be able to leave
-                        their own comments, upload four photos and ratings.
+                        An activity menu which seeks to inspire the user about
+                        how they can fill their time using strong visuals.
                       </ListItem>
                       <ListItem>
-                        Users can edit and delete their own comments
+                        {' '}
+                        The “Surprise Me!” button to generate a random activity
+                        of any category.
+                      </ListItem>
+                      <ListItem>
+                        A single activity page which displays the randomly
+                        generated activity suggestion.
+                      </ListItem>
+                      <ListItem>
+                        Further random suggestions within the category can be
+                        obtained using the “Try again” button.
                       </ListItem>
                     </UnorderedList>
                   </ModalBody>
@@ -553,6 +563,7 @@ const ProjectCards = () => {
           </CardFooter>
         </Card>
 
+        {/* Rockpool Detective */}
         <Card
           maxHeight={'750px'}
           maxWidth={'600px'}
@@ -561,7 +572,6 @@ const ProjectCards = () => {
           px="2em"
           py="2em"
           backgroundColor="#0e3849"
-          // maxW="md"
         >
           <CardBody>
             <Image
@@ -622,12 +632,12 @@ const ProjectCards = () => {
                 <ModalOverlay />
                 <ModalContent>
                   <ModalHeader size="lg" fontWeight="bold">
-                    Rockpool Detective - Project 1
+                    Champeaks - Project 4
                   </ModalHeader>
                   <ModalCloseButton />
                   <ModalBody>
                     <Text pb={3}>
-                      This was the first project built solo over 7 days for the
+                      This was the final project built solo over 7 days for the
                       General Assembly Software Engineering Immersive Course.
                     </Text>
                     <Heading size="sm" pt={2} pb={3}>
@@ -686,7 +696,7 @@ const ProjectCards = () => {
                       colorScheme="#0e3849"
                       textDecor="underline"
                       as="a"
-                      href="https://github.com/LucyHeath/Rockpool-Detective/blob/main/README.md"
+                      href="https://bit.ly/Rockpool-Detective_README"
                       isExternal
                       target="_blank"
                     >
