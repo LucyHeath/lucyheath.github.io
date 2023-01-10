@@ -44,11 +44,11 @@ const CareerEducation = () => {
               >
                 <Image
                   src="https://i.imgur.com/8h8qMBY.jpg"
-                  boxSize={['1em', '3em', '8em']}
+                  boxSize={['1em', '3em', '6em']}
                   alt="Cornwall Partnership Foundation Trust"
                 />
               </Tooltip>
-              <Heading size="lg" pb="0.5em" pt="2em" color="#55595b">
+              <Heading pl="1em" size="lg" pb="0.5em" pt="2em" color="#55595b">
                 Clinical Specialist Respiratory Physiotherapist
               </Heading>
               <Text>(2021- 09/2022)</Text>
@@ -73,11 +73,11 @@ const CareerEducation = () => {
               >
                 <Image
                   src="https://i.imgur.com/8h8qMBY.jpg"
-                  boxSize={['1em', '3em', '8em']}
+                  boxSize={['1em', '3em', '6em']}
                   alt="Cornwall Partnership Foundation Trust"
                 />
               </Tooltip>
-              <Heading size="lg" pb="0.5em" pt="2em" color="#55595b">
+              <Heading pl="1em" size="lg" pb="0.5em" pt="2em" color="#55595b">
                 Clinical Lead Specialist Respiratory Physiotherapist & Manager,
                 Community Respiratory Service
               </Heading>
@@ -127,7 +127,7 @@ const CareerEducation = () => {
                   boxSize={['1em', '3em', '6em']}
                 />
               </Tooltip>
-              <Heading pl="2em" size="lg" pb="0.5em" pt="2em" color="#55595b">
+              <Heading pl="1em" size="lg" pb="0.5em" pt="2em" color="#55595b">
                 Senior Specialist Physiotherapist in Community Stroke
                 Rehabilitation
               </Heading>
@@ -145,7 +145,7 @@ const CareerEducation = () => {
                   alt="The Royal Cornwall Hospital, Foundation Trust"
                 />
               </Tooltip>
-              <Heading pl="2em" size="lg" pb="0.5em" pt="2em" color="#55595b">
+              <Heading pl="1em" size="lg" pb="0.5em" pt="2em" color="#55595b">
                 Highly Specialist Physiotherapist in Respiratory Care
               </Heading>
               <Text>(2016-2019)</Text>
@@ -158,11 +158,11 @@ const CareerEducation = () => {
               >
                 <Image
                   src="https://i.imgur.com/dHtkwYX.jpg"
-                  boxSize={['1em', '3em', '8em']}
+                  boxSize={['1em', '3em', '6em']}
                   alt="University Hospital Southampton, Foundation Trust"
                 />
               </Tooltip>
-              <Heading size="lg" pb="0.5em" pt="2em" color="#55595b">
+              <Heading pl="1em" size="lg" pb="0.5em" pt="2em" color="#55595b">
                 Junior Rotational Physiotherapist
               </Heading>
               <Text>(2013- 2016)</Text>
@@ -179,7 +179,7 @@ const CareerEducation = () => {
                   alt="University of Southampton, Faculty of Health Sciences"
                 />
               </Tooltip>
-              <Heading pl="2em" size="lg" pb="0.5em" pt="2em" color="#55595b">
+              <Heading pl="1em" size="lg" pb="0.5em" pt="2em" color="#55595b">
                 Clinical Research Physiotherapist
               </Heading>
               <Text>(2013)</Text>

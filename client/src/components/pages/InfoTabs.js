@@ -90,7 +90,7 @@ const InfoTabs = () => {
             </Text>
           </TabPanel>
           <TabPanel>
-            <Heading textColor="#55595b" pb="0.5em" pt="2em">
+            <Heading size="lg" textColor="#55595b" pb="0.5em" pt="2em">
               Technical Skills
             </Heading>
             <Divider mb="2em" />
@@ -386,7 +386,13 @@ const InfoTabs = () => {
                 </Tooltip>
               </HStack>
             </HStack>
-            <Heading mt={'2em'} textColor="#55595b" pb="0.5em" pt="1.5em">
+            <Heading
+              size="lg"
+              mt={'2em'}
+              textColor="#55595b"
+              pb="0.5em"
+              pt="1.5em"
+            >
               Soft Skills
             </Heading>
             <Divider />
