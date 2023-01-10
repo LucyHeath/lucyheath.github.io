@@ -15,18 +15,21 @@ import {
 
 const InfoTabs = () => {
   return (
-    <Box backgroundColor={'white'} p={('1em', '3em', '6em')}>
+    <Box
+      backgroundColor={'white'}
+      px={('1em', '3em', '6em')}
+      py={['3em', '5em', '8em']}
+    >
       <Tabs isFitted variant="enclosed">
         <TabList mb="1em">
           <Tab color="#55595b" fontWeight="bold">
-            {' '}
-            About Me
+            <Heading>About Me</Heading>
           </Tab>
           <Tab color="#55595b" fontWeight="bold">
-            My Skills
+            <Heading>My Skills</Heading>
           </Tab>
           <Tab color="#55595b" fontWeight="bold">
-            My Experience
+            <Heading>My Experience</Heading>
           </Tab>
         </TabList>
         <TabPanels>

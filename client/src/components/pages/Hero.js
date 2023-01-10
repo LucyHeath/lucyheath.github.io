@@ -13,10 +13,11 @@ import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 const Hero = () => {
   return (
     <HStack
-      p={[4, 5]}
+      id="lh"
+      px={('1em', '3em', '6em')}
+      py={['3em', '5em', '8em']}
       justtifyContent={['center']}
       flexDirection={['column', 'row']}
-      px={['0.5em']}
       bgColor="#375b6d"
     >
       <Avatar

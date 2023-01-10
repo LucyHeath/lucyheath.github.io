@@ -2,17 +2,25 @@
 import { ChakraProvider } from '@chakra-ui/react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import HomePage from './components/pages/HomePage'
-import NotFound from './components/pages/NotFound'
+import Projects from './components/pages/Projects'
+import InfoTabs from '../src/components/pages/InfoTabs'
+import CareerEducation from './components/pages/CareerEducation'
+import Hero from '../src/components/pages/Hero'
+import Navbar from '../src/components/common//NavBar'
+import InterestsSection from '../src/components/pages/InterestsSection'
+import ContactSection from '../src/components/pages/ContactSection'
 
 const App = () => {
   return (
     <ChakraProvider>
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <Navbar />
+        <Hero />
+        <InfoTabs />
+        <Projects />
+        <CareerEducation />
+        <InterestsSection />
+        <ContactSection />
       </BrowserRouter>
     </ChakraProvider>
   )

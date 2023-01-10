@@ -11,17 +11,23 @@ import {
   Divider
 } from '@chakra-ui/react'
 
-const FurtherInfoAccordian = () => {
+const CareerEducation = () => {
   return (
-    <Box backgroundColour="white" p={('1em', '3em', '6em')}>
-      <Heading pb="1em">My Past </Heading>
+    <Box
+      id="background"
+      backgroundColour="white"
+      px={('1em', '3em', '6em')}
+      py={['3em', '5em', '8em']}
+    >
       <Divider />
-      <Accordion>
+      <Accordion allowMultiple>
         <AccordionItem>
           <h2>
             <AccordionButton>
               <Box as="span" flex="1" textAlign="left">
-                Heathcare Career
+                <Heading pt="1em" pb="0.5em" color="#55595b" fontWeight="bold">
+                  Healthcare Career
+                </Heading>
               </Box>
               <AccordionIcon />
             </AccordionButton>
@@ -95,7 +101,9 @@ const FurtherInfoAccordian = () => {
           <h2>
             <AccordionButton>
               <Box as="span" flex="1" textAlign="left">
-                Awards and Publications
+                <Heading pt="1em" pb="0.5em" color="#55595b" fontWeight="bold">
+                  Awards and Publications
+                </Heading>
               </Box>
               <AccordionIcon />
             </AccordionButton>
@@ -108,7 +116,9 @@ const FurtherInfoAccordian = () => {
           <h2>
             <AccordionButton>
               <Box as="span" flex="1" textAlign="left">
-                Education
+                <Heading pt="1em" pb="0.5em" color="#55595b" fontWeight="bold">
+                  Education
+                </Heading>
               </Box>
               <AccordionIcon />
             </AccordionButton>
@@ -120,4 +130,4 @@ const FurtherInfoAccordian = () => {
   )
 }
 
-export default FurtherInfoAccordian
+export default CareerEducation

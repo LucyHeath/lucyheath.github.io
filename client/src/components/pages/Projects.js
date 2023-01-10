@@ -31,8 +31,13 @@ const ProjectCards = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
-    <Box p={('1em', '3em', '6em')} bgColor="#375b6d">
-      <Heading textColor={'white'} pb="1em">
+    <Box
+      id="projects"
+      px={('1em', '3em', '6em')}
+      py={['3em', '5em', '8em']}
+      bgColor="#375b6d"
+    >
+      <Heading textColor={'white'} pb="0.5em">
         My Projects
       </Heading>
       <Divider />
@@ -45,12 +50,24 @@ const ProjectCards = () => {
         justifyItems="center"
         px="40px"
       >
-        <Card pt="1em" backgroundColor="#0e3849" maxW="md">
+        <Card
+          maxHeight={'750px'}
+          maxWidth={'600px'}
+          mx="3em"
+          my="4em"
+          px="2em"
+          py="2em"
+          backgroundColor="#0e3849"
+          // maxW="md"
+        >
           <CardBody>
             <Image
               src="https://i.imgur.com/pfOfxE2.png"
               alt="Champeakx"
               borderRadius="lg"
+              maxHeight={'550px'}
+              maxWidth={'500px'}
+              m="0px"
             />
             <Stack mt="6" spacing="3">
               <Heading textColor="white" size="md">
