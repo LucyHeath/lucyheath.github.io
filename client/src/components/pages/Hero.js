@@ -40,14 +40,21 @@ const Hero = () => {
           Hi, i&#39;m Lucy Heath
         </Heading>
         <Divider />
-        <Heading textColor="white" pb={'1em'} size="lg" pt="1em">
+        <Heading
+          textColor="white"
+          pb={'1em'}
+          size="lg"
+          pt="1em"
+          lineHeight={'1.5em'}
+        >
           Junior Software Engineer with 10 Years Healthcare Expertise and a
           Passion for Adventure Sports!
         </Heading>
         <HStack>
           <Tooltip label="GitHub" fontSize="md">
-            <chakra.span mr={'1em'}>
+            <chakra.span>
               <IconButton
+                mr={'1em'}
                 colorScheme="#ffffff"
                 aria-label="GitHub"
                 size="lg"
@@ -60,7 +67,7 @@ const Hero = () => {
               />
             </chakra.span>
           </Tooltip>
-          <Tooltip label="LinedIn" fontSize="md">
+          <Tooltip label="LinkedIn" fontSize="md">
             <chakra.span>
               <IconButton
                 colorScheme="grey"

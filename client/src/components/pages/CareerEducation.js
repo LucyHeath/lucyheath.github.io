@@ -8,7 +8,11 @@ import {
   Heading,
   UnorderedList,
   ListItem,
-  Divider
+  Divider,
+  HStack,
+  Image,
+  Tooltip,
+  Text
 } from '@chakra-ui/react'
 
 const CareerEducation = () => {
@@ -26,30 +30,67 @@ const CareerEducation = () => {
             <AccordionButton>
               <Box as="span" flex="1" textAlign="left">
                 <Heading pt="1em" pb="0.5em" color="#55595b" fontWeight="bold">
-                  Healthcare Career
+                  My Healthcare Career
                 </Heading>
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h2>
-          <AccordionPanel pb={4}>
-            <Heading size="sm">
-              Clinical Specialist Respiratory Physiotherapist
-              CornwallPartnership FT (2021- 09/2022)
-            </Heading>
-            <UnorderedList pb={2}>
+          <AccordionPanel pt="2em" pb={4}>
+            <HStack mt="1em">
+              <Tooltip
+                label="Cornwall Partnership Foundation Trust"
+                fontSize="md"
+              >
+                <Image
+                  src="https://i.imgur.com/8h8qMBY.jpg"
+                  boxSize={['1em', '3em', '8em']}
+                  alt="Cornwall Partnership Foundation Trust"
+                />
+              </Tooltip>
+              <Heading size="lg" pb="0.5em" pt="2em" color="#55595b">
+                Clinical Specialist Respiratory Physiotherapist
+              </Heading>
+              <Text>(2021- 09/2022)</Text>
+            </HStack>
+            <Divider />
+            <UnorderedList
+              pt={'2em'}
+              lineHeight={'2em'}
+              mx="150px"
+              pb={2}
+              color="#55595b"
+            >
               <ListItem>
                 Collaborated with stakeholders, designed and implemented a new
                 long COVID health service.
               </ListItem>
             </UnorderedList>
-            <Heading size="sm">
-              Clinical Lead Specialist Respiratory Physiotherapist & Manager of
-              the West Cornwall Community Respiratory Service Cornwall
-              Partnership FT (2019- 2021)
-            </Heading>
+            <HStack mt="1em">
+              <Tooltip
+                label="Cornwall Partnership Foundation Trust"
+                fontSize="md"
+              >
+                <Image
+                  src="https://i.imgur.com/8h8qMBY.jpg"
+                  boxSize={['1em', '3em', '8em']}
+                  alt="Cornwall Partnership Foundation Trust"
+                />
+              </Tooltip>
+              <Heading size="lg" pb="0.5em" pt="2em" color="#55595b">
+                Clinical Lead Specialist Respiratory Physiotherapist & Manager,
+                Community Respiratory Service
+              </Heading>
+              <Text>(2019- 2021)</Text>
+            </HStack>
             <Divider />
-            <UnorderedList pb={2}>
+            <UnorderedList
+              pt={'2em'}
+              lineHeight={'2em'}
+              pb={2}
+              color="#55595b"
+              mx="150px"
+            >
               <ListItem>
                 Designed and implemented a new community respiratory service in
                 West Cornwall.{' '}
@@ -75,25 +116,74 @@ const CareerEducation = () => {
                 center.
               </ListItem>
             </UnorderedList>
-            <Heading size="sm" pb={2}>
-              Senior Specialist Physiotherapist in Community Stroke
-              Rehabilitation The Royal Cornwall Hospital FT (2019-2020)
-            </Heading>
+            <HStack mt="1em">
+              <Tooltip
+                label="The Royal Cornwall Hospital, Foundation Trust"
+                fontSize="md"
+              >
+                <Image
+                  src="https://i.imgur.com/Oulz4QG.jpg"
+                  alt="The Royal Cornwall Hospital, Foundation Trust"
+                  boxSize={['1em', '3em', '6em']}
+                />
+              </Tooltip>
+              <Heading pl="2em" size="lg" pb="0.5em" pt="2em" color="#55595b">
+                Senior Specialist Physiotherapist in Community Stroke
+                Rehabilitation
+              </Heading>
+              <Text>(2019-2020)</Text>
+            </HStack>
             <Divider />
-            <Heading size="sm" pb={2}>
-              Highly Specialist Physiotherapist in Respiratory Care The Royal
-              Cornwall Hospital FT (2016-2019)
-            </Heading>
+            <HStack mt="1em">
+              <Tooltip
+                label="The Royal Cornwall Hospital, Foundation Trust"
+                fontSize="md"
+              >
+                <Image
+                  src="https://i.imgur.com/Oulz4QG.jpg"
+                  boxSize={['1em', '3em', '6em']}
+                  alt="The Royal Cornwall Hospital, Foundation Trust"
+                />
+              </Tooltip>
+              <Heading pl="2em" size="lg" pb="0.5em" pt="2em" color="#55595b">
+                Highly Specialist Physiotherapist in Respiratory Care
+              </Heading>
+              <Text>(2016-2019)</Text>
+            </HStack>
             <Divider />
-            <Heading size="sm" pb={2}>
-              Junior Rotational Physiotherapist University Hospital Southampton
-              FT (2013- 2016)
-            </Heading>
+            <HStack mt="1em">
+              <Tooltip
+                label="University Hospital Southampton, Foundation Trust"
+                fontSize="md"
+              >
+                <Image
+                  src="https://i.imgur.com/dHtkwYX.jpg"
+                  boxSize={['1em', '3em', '8em']}
+                  alt="University Hospital Southampton, Foundation Trust"
+                />
+              </Tooltip>
+              <Heading size="lg" pb="0.5em" pt="2em" color="#55595b">
+                Junior Rotational Physiotherapist
+              </Heading>
+              <Text>(2013- 2016)</Text>
+            </HStack>
             <Divider />
-            <Heading size="sm" pb={2}>
-              Clinical Research Physiotherapist, University of Southampton
-              (2013)
-            </Heading>
+            <HStack mt="1em">
+              <Tooltip
+                label="University of Southampton, Faculty of Health Sciences"
+                fontSize="md"
+              >
+                <Image
+                  src="https://i.imgur.com/XRpjxCa.jpg"
+                  boxSize={['1em', '3em', '6em']}
+                  alt="University of Southampton, Faculty of Health Sciences"
+                />
+              </Tooltip>
+              <Heading pl="2em" size="lg" pb="0.5em" pt="2em" color="#55595b">
+                Clinical Research Physiotherapist
+              </Heading>
+              <Text>(2013)</Text>
+            </HStack>
             <Divider />
           </AccordionPanel>
         </AccordionItem>
@@ -102,7 +192,7 @@ const CareerEducation = () => {
             <AccordionButton>
               <Box as="span" flex="1" textAlign="left">
                 <Heading pt="1em" pb="0.5em" color="#55595b" fontWeight="bold">
-                  Awards and Publications
+                  My Awards and Publications
                 </Heading>
               </Box>
               <AccordionIcon />
@@ -117,7 +207,7 @@ const CareerEducation = () => {
             <AccordionButton>
               <Box as="span" flex="1" textAlign="left">
                 <Heading pt="1em" pb="0.5em" color="#55595b" fontWeight="bold">
-                  Education
+                  My Education
                 </Heading>
               </Box>
               <AccordionIcon />

@@ -124,7 +124,7 @@ const ProjectCards = () => {
                   <ModalBody>
                     <Text pb={3}>
                       This was the final project built solo over 7 days for the
-                      General Assembly Engineering Immersive Course.
+                      General Assembly Software Engineering Immersive Course.
                     </Text>
                     <Heading size="sm" pt={2} pb={3}>
                       Brief
