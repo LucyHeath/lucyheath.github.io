@@ -1,5 +1,15 @@
-import { Divider, Text, Heading, VStack, chakra } from '@chakra-ui/react'
+import {
+  Divider,
+  Text,
+  Heading,
+  VStack,
+  chakra,
+  Tooltip,
+  HStack,
+  IconButton
+} from '@chakra-ui/react'
 import { HashLink } from 'react-router-hash-link'
+import { AiOutlineMail, AiFillLinkedin } from 'react-icons/ai'
 const ContactSection = () => {
   return (
     <VStack
@@ -12,20 +22,41 @@ const ContactSection = () => {
         Contact Me
       </Heading>
       <Divider />
-      <Heading pt="2em" size="md" pl="45px">
-        Reach me on&nbsp;
-        <chakra.span
-          as="a"
-          href="https://www.linkedin.com/in/lucy-e-heath/"
-          isExternal
-          target="_blank"
-          textColor="#0e3849"
-          textDecoration="underline"
-        >
-          LinkedIn
-        </chakra.span>{' '}
-        &nbsp;or by email
-      </Heading>
+      <HStack>
+        <Heading pt="2em" size="md" pl="45px">
+          Reach me on&nbsp;
+          <Tooltip label="LinkedIn" fontSize="md">
+            <chakra.span>
+              <IconButton
+                mx="10px"
+                colorScheme="grey"
+                aria-label="LinkedIn"
+                size="lg"
+                variant="outline"
+                icon={<AiFillLinkedin />}
+                as="a"
+                href="https://www.linkedin.com/in/lucy-e-heath/"
+                isExternal
+                target="_blank"
+              />
+            </chakra.span>
+          </Tooltip>
+          &nbsp;or by{' '}
+          <Tooltip label="lucyeheath@outlook.com" fontSize="md">
+            <chakra.span>
+              <IconButton
+                mx="10px"
+                colorScheme="grey"
+                aria-label="email"
+                size="lg"
+                variant="outline"
+                icon={<AiOutlineMail />}
+              />
+            </chakra.span>
+          </Tooltip>
+        </Heading>
+      </HStack>
+
       <HashLink smooth to="/#lh">
         <Text
           fontWeight="bold"

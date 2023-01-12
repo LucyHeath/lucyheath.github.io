@@ -37,7 +37,7 @@ const Hero = () => {
       >
         <Heading pl="30px" textColor="white" size={['xl']} pb="0.5em">
           {' '}
-          Hi, i&#39;m Lucy Heath
+          Hi, I&#39;m Lucy Heath
         </Heading>
         <Divider />
         <Heading

@@ -176,7 +176,7 @@ const Project2 = () => {
             textColor="white"
             variant="ghost"
             as="a"
-            href="http://bit.ly/Bored_"
+            href="https://general-assembly-project-two.netlify.app"
             isExternal
             target="_blank"
           >

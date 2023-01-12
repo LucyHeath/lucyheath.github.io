@@ -195,7 +195,7 @@ const Project3 = () => {
             textColor="white"
             variant="ghost"
             as="a"
-            href="http://bit.ly/lay-by "
+            href="https://lay-by.herokuapp.com/locations/6380e308703cc3c9c8fe9559"
             isExternal
             target="_blank"
           >
