@@ -35,7 +35,7 @@ const Project4 = () => {
       maxHeight={'750px'}
       maxWidth={'600px'}
       mx="3em"
-      my="4em"
+      my="2em"
       px="2em"
       py="2em"
       backgroundColor="#0e3849"

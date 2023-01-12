@@ -9,9 +9,13 @@ const InterestsSection = () => {
       py={['3em', '5em', '8em']}
       alignItems="flex-start"
     >
-      <Heading pb="0.5">My Adventures</Heading>
+      <Heading pl="30px" pb="0.5em" textColor="white">
+        My Adventures
+      </Heading>
       <Divider />
-      <Text>Some text and image carousel?</Text>
+      <Text pt="2em" textColor="white" pl="45px">
+        Some text and image carousel?
+      </Text>
     </VStack>
   )
 }

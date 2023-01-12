@@ -13,7 +13,6 @@ import {
   Image,
   Tooltip,
   Text,
-  chakra,
   Button,
   VStack
 } from '@chakra-ui/react'
@@ -32,7 +31,13 @@ const CareerEducation = () => {
           <h2>
             <AccordionButton>
               <Box as="span" flex="1" textAlign="left">
-                <Heading pt="1em" pb="0.5em" color="#55595b" fontWeight="bold">
+                <Heading
+                  pl="30px"
+                  pt="1em"
+                  pb="0.5em"
+                  color="#55595b"
+                  fontWeight="bold"
+                >
                   My Healthcare Career
                 </Heading>
               </Box>
@@ -51,7 +56,7 @@ const CareerEducation = () => {
                   alt="Cornwall Partnership Foundation Trust"
                 />
               </Tooltip>
-              <Heading pl="1em" size="lg" pb="0.5em" pt="2em" color="#55595b">
+              <Heading pl="30px" size="lg" pb="0.5em" pt="2em" color="#55595b">
                 Clinical Specialist Respiratory Physiotherapist
               </Heading>
               <Text>(2021- 09/2022)</Text>
@@ -80,7 +85,7 @@ const CareerEducation = () => {
                   alt="Cornwall Partnership Foundation Trust"
                 />
               </Tooltip>
-              <Heading pl="1em" size="lg" pb="0.5em" pt="2em" color="#55595b">
+              <Heading pl="30px" size="lg" pb="0.5em" pt="2em" color="#55595b">
                 Clinical Lead Specialist Respiratory Physiotherapist & Manager,
                 Community Respiratory Service
               </Heading>
@@ -130,7 +135,7 @@ const CareerEducation = () => {
                   boxSize={['1em', '3em', '6em']}
                 />
               </Tooltip>
-              <Heading pl="1em" size="lg" pb="0.5em" pt="2em" color="#55595b">
+              <Heading pl="30px" size="lg" pb="0.5em" pt="2em" color="#55595b">
                 Senior Specialist Physiotherapist in Community Stroke
                 Rehabilitation
               </Heading>
@@ -148,7 +153,7 @@ const CareerEducation = () => {
                   alt="The Royal Cornwall Hospital, Foundation Trust"
                 />
               </Tooltip>
-              <Heading pl="1em" size="lg" pb="0.5em" pt="2em" color="#55595b">
+              <Heading pl="30px" size="lg" pb="0.5em" pt="2em" color="#55595b">
                 Highly Specialist Physiotherapist in Respiratory Care
               </Heading>
               <Text>(2016-2019)</Text>
@@ -165,7 +170,7 @@ const CareerEducation = () => {
                   alt="University Hospital Southampton, Foundation Trust"
                 />
               </Tooltip>
-              <Heading pl="1em" size="lg" pb="0.5em" pt="2em" color="#55595b">
+              <Heading pl="30px" size="lg" pb="0.5em" pt="2em" color="#55595b">
                 Junior Rotational Physiotherapist
               </Heading>
               <Text>(2013- 2016)</Text>
@@ -182,7 +187,7 @@ const CareerEducation = () => {
                   alt="University of Southampton, Faculty of Health Sciences"
                 />
               </Tooltip>
-              <Heading pl="1em" size="lg" pb="0.5em" pt="2em" color="#55595b">
+              <Heading pl="30px" size="lg" pb="0.5em" pt="2em" color="#55595b">
                 Clinical Research Physiotherapist
               </Heading>
               <Text>(2013)</Text>
@@ -194,7 +199,13 @@ const CareerEducation = () => {
           <h2>
             <AccordionButton>
               <Box as="span" flex="1" textAlign="left">
-                <Heading pt="1em" pb="0.5em" color="#55595b" fontWeight="bold">
+                <Heading
+                  pl="30px"
+                  pt="1em"
+                  pb="0.5em"
+                  color="#55595b"
+                  fontWeight="bold"
+                >
                   My Awards and Publications
                 </Heading>
               </Box>
@@ -213,10 +224,10 @@ const CareerEducation = () => {
                   alt="University of Southampton, Faculty of Health Sciences"
                 />
               </Tooltip>
-              <VStack>
+              <VStack alignItems="flex-start">
                 <HStack>
                   <Heading
-                    pl="1em"
+                    pl="30px"
                     size="lg"
                     pb="0.5em"
                     pt="2em"
@@ -227,7 +238,9 @@ const CareerEducation = () => {
                   <Text>(2018)</Text>
                 </HStack>
 
-                <Heading size="sm">Intensive Care</Heading>
+                <Heading pl="45px" size="sm">
+                  Intensive Care
+                </Heading>
               </VStack>
             </HStack>
 
@@ -242,20 +255,20 @@ const CareerEducation = () => {
                   alt="Royal Cornwall Hospital, Foundation Trust"
                 />
               </Tooltip>
-              <VStack>
+              <VStack alignItems="flex-start">
                 <HStack>
                   <Heading
-                    pl="1em"
+                    pl="30px"
                     size="lg"
                     pb="0.5em"
                     pt="2em"
                     color="#55595b"
                   >
-                    “Best New Investigator” Winner
+                    “Best New Investigator Award” Winner
                   </Heading>
                   <Text>(2015)</Text>
                 </HStack>
-                <Heading size="sm">
+                <Heading pl="45px" size="sm">
                   Society of Back-pain Research International Conference
                 </Heading>
               </VStack>
@@ -272,28 +285,36 @@ const CareerEducation = () => {
                   alt="University of Southampton, Faculty of Health Sciences"
                 />
               </Tooltip>
-              <VStack>
-                <Heading pl="1em" size="lg" pb="0.5em" pt="2em" color="#55595b">
-                  Original article: &quot;Shared decision-making in back pain
-                  consultations: an illusion or reality?&quot;
-                </Heading>
-                <Text>(2014)</Text>
+              <VStack alignItems="flex-start">
                 <HStack>
-                  <Heading size="sm" ml="50px">
+                  {' '}
+                  <Heading
+                    pl="30px"
+                    size="lg"
+                    pb="0.5em"
+                    pt="2em"
+                    color="#55595b"
+                  >
+                    Article: &quot;Shared decision-making in back pain
+                    consultations: an illusion or reality?&quot;
+                  </Heading>
+                  <Text>(2014)</Text>
+                </HStack>
+                <HStack alignItems="flex-start">
+                  <Heading size="sm" pl="45px">
                     The European Spine Journal
                   </Heading>
+                  <Button
+                    variant="solid"
+                    color="#0e3849"
+                    as="a"
+                    href="https://link.springer.com/article/10.1007/s00586-014-3187-0"
+                    isExternal
+                    target="_blank"
+                  >
+                    Read article
+                  </Button>
                 </HStack>
-
-                <Button
-                  variant="solid"
-                  color="#0e3849"
-                  as="a"
-                  href="https://link.springer.com/article/10.1007/s00586-014-3187-0"
-                  isExternal
-                  target="_blank"
-                >
-                  Read article
-                </Button>
               </VStack>
             </HStack>
 
@@ -308,28 +329,38 @@ const CareerEducation = () => {
                   alt="University of Southampton, Faculty of Health Sciences"
                 />
               </Tooltip>
-              <VStack alignContent="flex-start">
-                <Heading pl="1em" size="lg" pb="0.5em" pt="2em" color="#55595b">
-                  The Journal of Hand Therapy
-                </Heading>
-                <Text>(2013)</Text>
+
+              <VStack alignItems="flex-start">
                 <HStack>
-                  <Heading size="sm" ml="50px">
+                  {' '}
+                  <Heading
+                    pl="30px"
+                    size="lg"
+                    pb="0.5em"
+                    pt="2em"
+                    color="#55595b"
+                  >
                     Article: &quot;The thoughts and feelings held by clinicians
                     about the delivery of a placebo thumb splint in an
                     osteoarthritis rehabilitation trial.&quot;
                   </Heading>
+                  <Text>(2013)</Text>
                 </HStack>
-                <Button
-                  variant="solid"
-                  color="#0e3849"
-                  as="a"
-                  href="https://journals.sagepub.com/doi/10.1177/1758998313496979"
-                  isExternal
-                  target="_blank"
-                >
-                  Read article
-                </Button>
+                <HStack alignItems="flex-start">
+                  <Heading size="sm" pl="45px">
+                    The Journal of Hand Therapy
+                  </Heading>
+                  <Button
+                    variant="solid"
+                    color="#0e3849"
+                    as="a"
+                    href="https://journals.sagepub.com/doi/10.1177/1758998313496979"
+                    isExternal
+                    target="_blank"
+                  >
+                    Read article
+                  </Button>
+                </HStack>
               </VStack>
             </HStack>
           </AccordionPanel>
@@ -338,7 +369,13 @@ const CareerEducation = () => {
           <h2>
             <AccordionButton>
               <Box as="span" flex="1" textAlign="left">
-                <Heading pt="1em" pb="0.5em" color="#55595b" fontWeight="bold">
+                <Heading
+                  pl="30px"
+                  pt="1em"
+                  pb="0.5em"
+                  color="#55595b"
+                  fontWeight="bold"
+                >
                   My Education
                 </Heading>
               </Box>
@@ -354,10 +391,10 @@ const CareerEducation = () => {
                   alt="General Assembly"
                 />
               </Tooltip>
-              <VStack>
+              <VStack alignItems="flex-start">
                 <HStack>
                   <Heading
-                    pl="1em"
+                    pl="30px"
                     size="lg"
                     pb="0.5em"
                     pt="2em"
@@ -367,7 +404,9 @@ const CareerEducation = () => {
                   </Heading>
                   <Text>(09-12/2022)</Text>
                 </HStack>
-                <Heading size="sm">Certificate of completion</Heading>
+                <Heading pl="30px" size="sm">
+                  Certificate of completion
+                </Heading>
               </VStack>
             </HStack>
 
@@ -382,10 +421,10 @@ const CareerEducation = () => {
                   alt="University of Southampton, Faculty of Health Sciences"
                 />
               </Tooltip>
-              <VStack>
+              <VStack alignItems="flex-start">
                 <HStack>
                   <Heading
-                    pl="1em"
+                    pl="30px"
                     size="lg"
                     pb="0.5em"
                     pt="2em"
@@ -395,7 +434,10 @@ const CareerEducation = () => {
                   </Heading>
                   <Text>(2011-2013)</Text>
                 </HStack>
-                <Heading size="sm"> Merit</Heading>
+                <Heading pl="30px" size="sm">
+                  {' '}
+                  Merit
+                </Heading>
               </VStack>
             </HStack>
 
@@ -407,10 +449,10 @@ const CareerEducation = () => {
                   alt="Cardiff University"
                 />
               </Tooltip>
-              <VStack>
+              <VStack alignItems="flex-start">
                 <HStack>
                   <Heading
-                    pl="1em"
+                    pl="30px"
                     size="lg"
                     pb="0.5em"
                     pt="2em"
@@ -420,7 +462,9 @@ const CareerEducation = () => {
                   </Heading>
                   <Text>(2006-2009)</Text>
                 </HStack>
-                <Heading size="sm">2.1 Hons</Heading>
+                <Heading pl="30px" size="sm">
+                  2.1 Hons
+                </Heading>
               </VStack>
             </HStack>
           </AccordionPanel>

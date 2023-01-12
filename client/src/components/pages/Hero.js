@@ -35,7 +35,7 @@ const Hero = () => {
         mr={['1em', '6em', '6em']}
         pr={['6em']}
       >
-        <Heading textColor="white" size={['xl']} pb="0.5em">
+        <Heading pl="30px" textColor="white" size={['xl']} pb="0.5em">
           {' '}
           Hi, i&#39;m Lucy Heath
         </Heading>
@@ -46,11 +46,12 @@ const Hero = () => {
           size="lg"
           pt="1em"
           lineHeight={'1.5em'}
+          pl="30px"
         >
           Junior Software Engineer with 10 Years Healthcare Expertise and a
           Passion for Adventure Sports!
         </Heading>
-        <HStack>
+        <HStack pl="30px">
           <Tooltip label="GitHub" fontSize="md">
             <chakra.span>
               <IconButton

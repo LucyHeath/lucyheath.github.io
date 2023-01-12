@@ -12,15 +12,15 @@ const ProjectCards = () => {
       py={['3em', '5em', '8em']}
       bgColor="#375b6d"
     >
-      <Heading textColor={'white'} pb="0.5em">
+      <Heading pl="30px" textColor={'white'} pb="0.5em">
         My Projects
       </Heading>
       <Divider />
       <SimpleGrid
-        columns={{ sm: 2, md: 2, lg: 4 }}
+        columns={{ xs: 12, sm: 12, md: 6, lg: 4 }}
         pt="2rem"
         spacing={6}
-        templateColumns="repeat(auto-fill, minmax(550px, 1fr))"
+        templateColumns="repeat(auto-fill, minmax(650px, 1fr))"
         gap={10}
         justifyItems="center"
         px="40px"

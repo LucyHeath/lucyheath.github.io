@@ -1,6 +1,6 @@
 import { Divider, Text, Heading, VStack, chakra } from '@chakra-ui/react'
 import { HashLink } from 'react-router-hash-link'
-const ContactSection = ({ Hero }) => {
+const ContactSection = () => {
   return (
     <VStack
       px={('1em', '3em', '6em')}
@@ -8,9 +8,11 @@ const ContactSection = ({ Hero }) => {
       alignItems="flex-start"
       id="contact"
     >
-      <Heading pb="0.5">Contact Me</Heading>
+      <Heading pl="30px" pb="0.5em">
+        Contact Me
+      </Heading>
       <Divider />
-      <Text>
+      <Heading pt="2em" size="md" pl="45px">
         Reach me on&nbsp;
         <chakra.span
           as="a"
@@ -22,13 +24,14 @@ const ContactSection = ({ Hero }) => {
         >
           LinkedIn
         </chakra.span>{' '}
-        &nbsp;or email
-      </Text>
-      <HashLink Hero={Hero} smooth to="/#lh">
+        &nbsp;or by email
+      </Heading>
+      <HashLink smooth to="/#lh">
         <Text
           fontWeight="bold"
-          px={['0.5em']}
+          pl="45px"
           color="#55595b"
+          pt="2em"
           textDecoration="underline"
         >
           Back to top

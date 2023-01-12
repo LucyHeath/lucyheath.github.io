@@ -50,7 +50,7 @@ const InfoTabs = () => {
     >
       <Tabs isFitted variant="enclosed">
         <TabList mb="1em">
-          <Tab color="#55595b" fontWeight="bold">
+          <Tab color="#55595b" fontWeight="bold" >
             <Heading>About Me</Heading>
           </Tab>
           <Tab color="#55595b" fontWeight="bold">

@@ -34,9 +34,9 @@ const Project3 = () => {
       maxHeight={'750px'}
       maxWidth={'600px'}
       mx="3em"
-      my="4em"
       px="2em"
       py="2em"
+      my="2em"
       backgroundColor="#0e3849"
     >
       <CardBody>
