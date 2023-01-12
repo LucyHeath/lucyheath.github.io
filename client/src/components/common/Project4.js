@@ -53,7 +53,7 @@ const Project4 = () => {
           <Heading textColor="white" size="md">
             Champeakx
           </Heading>
-          <Text textColor="white" fontColor="white">
+          <Text textColor="white">
             {' '}
             A full-stack app that allows people to view information about
             mountaineering routes in Chamonix. Users may create an account to
@@ -171,7 +171,6 @@ const Project4 = () => {
                   textDecor="underline"
                   as="a"
                   href="https://bit.ly/Champeakx_README"
-                  isExternal
                   target="_blank"
                 >
                   Full README
@@ -185,7 +184,6 @@ const Project4 = () => {
             variant="ghost"
             as="a"
             href="https://champeax.herokuapp.com/mountaineeringRoutes"
-            isExternal
             target="_blank"
           >
             View site

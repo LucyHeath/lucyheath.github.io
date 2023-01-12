@@ -63,7 +63,6 @@ const Hero = () => {
                 icon={<AiFillGithub />}
                 as="a"
                 href="https://github.com/LucyHeath"
-                isExternal
                 target="_blank"
               />
             </chakra.span>
@@ -78,7 +77,6 @@ const Hero = () => {
                 icon={<AiFillLinkedin />}
                 as="a"
                 href="https://www.linkedin.com/in/lucy-e-heath/"
-                isExternal
                 target="_blank"
               />
             </chakra.span>

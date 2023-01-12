@@ -53,7 +53,7 @@ const Project2 = () => {
           <Heading textColor="white" size="md">
             Bored?
           </Heading>
-          <Text textColor="white" fontColor="white">
+          <Text textColor="white">
             {' '}
             In a world filled with ”doom scrolling”, Bored? is a website that
             seeks to inspire the user with ideas about how they could fill their
@@ -163,7 +163,6 @@ const Project2 = () => {
                   textDecor="underline"
                   as="a"
                   href="https://bit.ly/Bored__README"
-                  isExternal
                   target="_blank"
                 >
                   Full README
@@ -177,7 +176,6 @@ const Project2 = () => {
             variant="ghost"
             as="a"
             href="https://general-assembly-project-two.netlify.app"
-            isExternal
             target="_blank"
           >
             View site

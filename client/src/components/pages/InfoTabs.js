@@ -50,7 +50,7 @@ const InfoTabs = () => {
     >
       <Tabs isFitted variant="enclosed">
         <TabList mb="1em">
-          <Tab color="#55595b" fontWeight="bold" >
+          <Tab color="#55595b" fontWeight="bold">
             <Heading>About Me</Heading>
           </Tab>
           <Tab color="#55595b" fontWeight="bold">
@@ -64,7 +64,7 @@ const InfoTabs = () => {
           <TabPanel>
             <Text
               color="#55595b"
-              textColor="#55595b"
+              // textColor="#55595b"
               pt="4em"
               lineHeight={'2em'}
               mx="50px"
@@ -108,7 +108,6 @@ const InfoTabs = () => {
                     size="lg"
                     variant="outline"
                     icon={<AiFillHtml5 />}
-                    isExternal
                     target="_blank"
                   />
                 </Tooltip>
@@ -119,7 +118,6 @@ const InfoTabs = () => {
                     size="lg"
                     variant="outline"
                     icon={<IoLogoCss3 />}
-                    isExternal
                     target="_blank"
                   />
                 </Tooltip>
@@ -130,7 +128,6 @@ const InfoTabs = () => {
                     size="lg"
                     variant="outline"
                     icon={<IoLogoJavascript />}
-                    isExternal
                     target="_blank"
                   />
                 </Tooltip>
@@ -141,7 +138,6 @@ const InfoTabs = () => {
                     size="lg"
                     variant="outline"
                     icon={<FaReact />}
-                    isExternal
                     target="_blank"
                   />
                 </Tooltip>
@@ -152,7 +148,6 @@ const InfoTabs = () => {
                     size="lg"
                     variant="outline"
                     icon={<FaSass />}
-                    isExternal
                     target="_blank"
                   />
                 </Tooltip>
@@ -163,7 +158,6 @@ const InfoTabs = () => {
                     size="lg"
                     variant="outline"
                     icon={<BsFillBootstrapFill />}
-                    isExternal
                     target="_blank"
                   />
                 </Tooltip>
@@ -174,7 +168,6 @@ const InfoTabs = () => {
                     size="lg"
                     variant="outline"
                     icon={<SiChakraui />}
-                    isExternal
                     target="_blank"
                   />
                 </Tooltip>
@@ -194,7 +187,6 @@ const InfoTabs = () => {
                     size="lg"
                     variant="outline"
                     icon={<FaNodeJs />}
-                    isExternal
                     target="_blank"
                   />
                 </Tooltip>
@@ -205,7 +197,6 @@ const InfoTabs = () => {
                     size="lg"
                     variant="outline"
                     icon={<SiMongodb />}
-                    isExternal
                     target="_blank"
                   />
                 </Tooltip>
@@ -216,7 +207,6 @@ const InfoTabs = () => {
                     size="lg"
                     variant="outline"
                     icon={<FaPython />}
-                    isExternal
                     target="_blank"
                   />
                 </Tooltip>
@@ -227,7 +217,6 @@ const InfoTabs = () => {
                     size="lg"
                     variant="outline"
                     icon={<SiDjango />}
-                    isExternal
                     target="_blank"
                   />
                 </Tooltip>
@@ -238,7 +227,6 @@ const InfoTabs = () => {
                     size="lg"
                     variant="outline"
                     icon={<SiPostgresql />}
-                    isExternal
                     target="_blank"
                   />
                 </Tooltip>
@@ -249,7 +237,6 @@ const InfoTabs = () => {
                     size="lg"
                     variant="outline"
                     icon={<FaDatabase />}
-                    isExternal
                     target="_blank"
                   />
                 </Tooltip>
@@ -270,7 +257,6 @@ const InfoTabs = () => {
                     size="lg"
                     variant="outline"
                     icon={<SiInsomnia />}
-                    isExternal
                     target="_blank"
                   />
                 </Tooltip>
@@ -281,7 +267,6 @@ const InfoTabs = () => {
                     size="lg"
                     variant="outline"
                     icon={<SiVisualstudio />}
-                    isExternal
                     target="_blank"
                   />
                 </Tooltip>
@@ -292,7 +277,6 @@ const InfoTabs = () => {
                     size="lg"
                     variant="outline"
                     icon={<AiFillGithub />}
-                    isExternal
                     target="_blank"
                   />
                 </Tooltip>
@@ -303,7 +287,6 @@ const InfoTabs = () => {
                     size="lg"
                     variant="outline"
                     icon={<AiFillChrome />}
-                    isExternal
                     target="_blank"
                   />
                 </Tooltip>
@@ -314,7 +297,6 @@ const InfoTabs = () => {
                     size="lg"
                     variant="outline"
                     icon={<SiHeroku />}
-                    isExternal
                     target="_blank"
                   />
                 </Tooltip>
@@ -325,7 +307,6 @@ const InfoTabs = () => {
                     size="lg"
                     variant="outline"
                     icon={<SiYarn />}
-                    isExternal
                     target="_blank"
                   />
                 </Tooltip>
@@ -336,7 +317,6 @@ const InfoTabs = () => {
                     size="lg"
                     variant="outline"
                     icon={<SiNpm />}
-                    isExternal
                     target="_blank"
                   />
                 </Tooltip>
@@ -347,7 +327,6 @@ const InfoTabs = () => {
                     size="lg"
                     variant="outline"
                     icon={<SiTrello />}
-                    isExternal
                     target="_blank"
                   />
                 </Tooltip>
@@ -358,7 +337,6 @@ const InfoTabs = () => {
                     size="lg"
                     variant="outline"
                     icon={<FcCommandLine />}
-                    isExternal
                     target="_blank"
                   />
                 </Tooltip>
@@ -369,7 +347,6 @@ const InfoTabs = () => {
                     size="lg"
                     variant="outline"
                     icon={<SiZoom />}
-                    isExternal
                     target="_blank"
                   />
                 </Tooltip>
@@ -380,7 +357,6 @@ const InfoTabs = () => {
                     size="lg"
                     variant="outline"
                     icon={<FaSlack />}
-                    isExternal
                     target="_blank"
                   />
                 </Tooltip>

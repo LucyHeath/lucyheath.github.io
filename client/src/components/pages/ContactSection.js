@@ -24,7 +24,7 @@ const ContactSection = () => {
       <Divider />
       <HStack>
         <Heading pt="2em" size="md" pl="45px">
-          Reach me on&nbsp;
+          Reach me at&nbsp;
           <Tooltip label="LinkedIn" fontSize="md">
             <chakra.span>
               <IconButton
@@ -36,7 +36,6 @@ const ContactSection = () => {
                 icon={<AiFillLinkedin />}
                 as="a"
                 href="https://www.linkedin.com/in/lucy-e-heath/"
-                isExternal
                 target="_blank"
               />
             </chakra.span>

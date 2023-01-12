@@ -52,7 +52,7 @@ const Project1 = () => {
           <Heading textColor="white" size="md">
             Rockpool Detective
           </Heading>
-          <Text textColor="white" fontColor="white">
+          <Text textColor="white">
             {' '}
             Rockpool Detective is based on the classic code-breaking game
             Mastermind. A hidden pattern of four Rockpool Creatures is generated
@@ -148,7 +148,6 @@ const Project1 = () => {
                   textDecor="underline"
                   as="a"
                   href="https://bit.ly/Rockpool-Detective_README"
-                  isExternal
                   target="_blank"
                 >
                   Full README
@@ -162,7 +161,6 @@ const Project1 = () => {
             variant="ghost"
             as="a"
             href="https://bit.ly/Rockpool-Detective"
-            isExternal
             target="_blank"
           >
             View site

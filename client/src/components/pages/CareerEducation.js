@@ -21,7 +21,7 @@ const CareerEducation = () => {
   return (
     <Box
       id="background"
-      backgroundColour="white"
+      color="white"
       px={('1em', '3em', '6em')}
       py={['3em', '5em', '8em']}
     >
@@ -309,7 +309,6 @@ const CareerEducation = () => {
                     color="#0e3849"
                     as="a"
                     href="https://link.springer.com/article/10.1007/s00586-014-3187-0"
-                    isExternal
                     target="_blank"
                   >
                     Read article
@@ -355,7 +354,6 @@ const CareerEducation = () => {
                     color="#0e3849"
                     as="a"
                     href="https://journals.sagepub.com/doi/10.1177/1758998313496979"
-                    isExternal
                     target="_blank"
                   >
                     Read article
@@ -384,7 +382,7 @@ const CareerEducation = () => {
           </h2>
           <AccordionPanel pb={4}>
             <HStack mt="1em">
-              <Tooltip label="General Assembly" fontSize="md">
+              <Tooltip label="General Assembly, London" fontSize="md">
                 <Image
                   src="https://i.imgur.com/jMGOSzI.png"
                   boxSize={['1em', '3em', '6em']}
@@ -400,7 +398,7 @@ const CareerEducation = () => {
                     pt="2em"
                     color="#55595b"
                   >
-                    Software Engineering Immersive, General Assembly London
+                    Software Engineering Immersive
                   </Heading>
                   <Text>(09-12/2022)</Text>
                 </HStack>

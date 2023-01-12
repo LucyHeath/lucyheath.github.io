@@ -52,7 +52,7 @@ const Project3 = () => {
           <Heading textColor="white" size="md">
             Lay-by
           </Heading>
-          <Text textColor="white" fontColor="white">
+          <Text textColor="white">
             {' '}
             Lay-by aims to provide those in the van-owning community with useful
             insider information about locations for van camping. Users can view
@@ -182,7 +182,6 @@ const Project3 = () => {
                   textDecor="underline"
                   as="a"
                   href="https://bit.ly/lay-by_README"
-                  isExternal
                   target="_blank"
                 >
                   Full README
@@ -196,7 +195,6 @@ const Project3 = () => {
             variant="ghost"
             as="a"
             href="https://lay-by.herokuapp.com/locations/6380e308703cc3c9c8fe9559"
-            isExternal
             target="_blank"
           >
             View site
