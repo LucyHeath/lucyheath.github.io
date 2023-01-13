@@ -39,7 +39,7 @@ const InterestsSection = () => {
       </Box>
       <Text color="white" pt="4em" lineHeight={'2em'} mx="50px">
         <chakra.span fontWeight="bold">&quot;</chakra.span>I enjoy adventure and
-        spend most of my spare time outdoors climbing, surfing or kitesurfing
+        spend most of my spare time outdoor climbing, surfing or kitesurfing
         (level 3 advanced kiteboarder) at home in Cornwall, diving in warmer
         waters (TDI Certified Sidemount Diver) or mountaineering and ski-touring
         in the Alps. I am also a paraglider pilot and my best achievement was to
