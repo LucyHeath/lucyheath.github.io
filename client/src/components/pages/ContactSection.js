@@ -18,12 +18,12 @@ const ContactSection = () => {
       alignItems="flex-start"
       id="contact"
     >
-      <Heading pl="30px" pb="0.5em">
+      <Heading pl="30px" pb="0.5em" color="#55595b">
         Contact Me
       </Heading>
       <Divider />
       <HStack>
-        <Heading pt="2em" size="md" pl="45px">
+        <Heading pt="2em" size="md" pl="45px" color="#55595b">
           Reach me at&nbsp;
           <Tooltip label="LinkedIn" fontSize="md">
             <chakra.span>

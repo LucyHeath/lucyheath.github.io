@@ -25,6 +25,9 @@ const CareerEducation = () => {
       px={('1em', '3em', '6em')}
       py={['3em', '5em', '8em']}
     >
+      <Heading pl="30px" pb="0.5em" color="#55595b">
+        My Background
+      </Heading>
       <Divider />
       <Accordion allowMultiple>
         <AccordionItem>
@@ -59,8 +62,13 @@ const CareerEducation = () => {
               <Heading pl="30px" size="lg" pb="0.5em" pt="2em" color="#55595b">
                 Clinical Specialist Respiratory Physiotherapist
               </Heading>
-              <Text>(2021- 09/2022)</Text>
+              <Text color="#55595b">(2021- 09/2022)</Text>
             </HStack>
+            <Box>
+              <Heading pl="136px" size="md" pb="0.5em" color="#55595b">
+                Cornwall Partnership Foundation Trust
+              </Heading>
+            </Box>
             <Divider />
             <UnorderedList
               pt={'2em'}
@@ -89,8 +97,13 @@ const CareerEducation = () => {
                 Clinical Lead Specialist Respiratory Physiotherapist & Manager,
                 Community Respiratory Service
               </Heading>
-              <Text>(2019- 2021)</Text>
+              <Text color="#55595b">(2019- 2021)</Text>
             </HStack>
+            <Box>
+              <Heading pl="136px" size="md" pb="0.5em" color="#55595b">
+                Cornwall Partnership Foundation Trust
+              </Heading>
+            </Box>
             <Divider />
             <UnorderedList
               pt={'2em'}
@@ -126,12 +139,12 @@ const CareerEducation = () => {
             </UnorderedList>
             <HStack mt="1em">
               <Tooltip
-                label="The Royal Cornwall Hospital, Foundation Trust"
+                label="The Royal Cornwall Hospital Foundation Trust"
                 fontSize="md"
               >
                 <Image
                   src="https://i.imgur.com/Oulz4QG.jpg"
-                  alt="The Royal Cornwall Hospital, Foundation Trust"
+                  alt="The Royal Cornwall Hospital Foundation Trust"
                   boxSize={['1em', '3em', '6em']}
                 />
               </Tooltip>
@@ -139,42 +152,57 @@ const CareerEducation = () => {
                 Senior Specialist Physiotherapist in Community Stroke
                 Rehabilitation
               </Heading>
-              <Text>(2019-2020)</Text>
+              <Text color="#55595b">(2019-2020)</Text>
             </HStack>
+            <Box>
+              <Heading pl="136px" size="md" pb="0.5em" color="#55595b">
+                Royal Cornwall Hospital Foundation Trust
+              </Heading>
+            </Box>
             <Divider />
             <HStack mt="1em">
               <Tooltip
-                label="The Royal Cornwall Hospital, Foundation Trust"
+                label="The Royal Cornwall Hospital Foundation Trust"
                 fontSize="md"
               >
                 <Image
                   src="https://i.imgur.com/Oulz4QG.jpg"
                   boxSize={['1em', '3em', '6em']}
-                  alt="The Royal Cornwall Hospital, Foundation Trust"
+                  alt="The Royal Cornwall Hospital Foundation Trust"
                 />
               </Tooltip>
               <Heading pl="30px" size="lg" pb="0.5em" pt="2em" color="#55595b">
                 Highly Specialist Physiotherapist in Respiratory Care
               </Heading>
-              <Text>(2016-2019)</Text>
+              <Text color="#55595b">(2016-2019)</Text>
             </HStack>
+            <Box>
+              <Heading pl="136px" size="md" pb="0.5em" color="#55595b">
+                Royal Cornwall Hospital Foundation Trust
+              </Heading>
+            </Box>
             <Divider />
             <HStack mt="1em">
               <Tooltip
-                label="University Hospital Southampton, Foundation Trust"
+                label="University Hospital Southampton Foundation Trust"
                 fontSize="md"
               >
                 <Image
                   src="https://i.imgur.com/dHtkwYX.jpg"
                   boxSize={['1em', '3em', '6em']}
-                  alt="University Hospital Southampton, Foundation Trust"
+                  alt="University Hospital Southampton Foundation Trust"
                 />
               </Tooltip>
               <Heading pl="30px" size="lg" pb="0.5em" pt="2em" color="#55595b">
                 Junior Rotational Physiotherapist
               </Heading>
-              <Text>(2013- 2016)</Text>
+              <Text color="#55595b">(2013- 2016)</Text>
             </HStack>
+            <Box>
+              <Heading pl="136px" size="md" pb="0.5em" color="#55595b">
+                University Hospital Southampton Foundation Trust
+              </Heading>
+            </Box>
             <Divider />
             <HStack mt="1em">
               <Tooltip
@@ -190,8 +218,13 @@ const CareerEducation = () => {
               <Heading pl="30px" size="lg" pb="0.5em" pt="2em" color="#55595b">
                 Clinical Research Physiotherapist
               </Heading>
-              <Text>(2013)</Text>
+              <Text color="#55595b">(2013)</Text>
             </HStack>
+            <Box>
+              <Heading pl="136px" size="md" pb="0.5em" color="#55595b">
+                University of Southampton, Faculty of Health Sciences
+              </Heading>
+            </Box>
             <Divider />
           </AccordionPanel>
         </AccordionItem>
@@ -215,13 +248,13 @@ const CareerEducation = () => {
           <AccordionPanel pb={4}>
             <HStack mt="1em">
               <Tooltip
-                label="University of Southampton, Faculty of Health Sciences"
+                label="Royal Cornwall Hospital Foundation Trust"
                 fontSize="md"
               >
                 <Image
                   src="https://i.imgur.com/Oulz4QG.jpg"
                   boxSize={['1em', '3em', '6em']}
-                  alt="University of Southampton, Faculty of Health Sciences"
+                  alt="Royal Cornwall Hospital Foundation Trust"
                 />
               </Tooltip>
               <VStack alignItems="flex-start">
@@ -235,24 +268,21 @@ const CareerEducation = () => {
                   >
                     “Care Award” Winner
                   </Heading>
-                  <Text>(2018)</Text>
+                  <Text color="#55595b">(2018)</Text>
                 </HStack>
-
-                <Heading pl="45px" size="sm">
-                  Intensive Care
+                <Heading pl="30px" size="md" pb="0.5em" color="#55595b">
+                  Royal Cornwall Hospital Foundation Trust, Intensive Care Unit
                 </Heading>
               </VStack>
             </HStack>
+            <Divider />
 
             <HStack mt="1em">
-              <Tooltip
-                label="Royal Cornwall Hospital, Foundation Trust"
-                fontSize="md"
-              >
+              <Tooltip label="The Society of Backpain Research" fontSize="md">
                 <Image
-                  src="https://i.imgur.com/XRpjxCa.jpg"
+                  src="https://i.imgur.com/XZ2JdoL.jpg"
                   boxSize={['1em', '3em', '6em']}
-                  alt="Royal Cornwall Hospital, Foundation Trust"
+                  alt="The Society of Backpain Research"
                 />
               </Tooltip>
               <VStack alignItems="flex-start">
@@ -266,23 +296,20 @@ const CareerEducation = () => {
                   >
                     “Best New Investigator Award” Winner
                   </Heading>
-                  <Text>(2015)</Text>
+                  <Text color="#55595b">(2015)</Text>
                 </HStack>
-                <Heading pl="45px" size="sm">
+                <Heading pl="30px" size="md" pb="0.5em" color="#55595b">
                   Society of Back-pain Research International Conference
                 </Heading>
               </VStack>
             </HStack>
-
+            <Divider />
             <HStack mt="1em">
-              <Tooltip
-                label="University of Southampton, Faculty of Health Sciences"
-                fontSize="md"
-              >
+              <Tooltip label="The European Spine Journal" fontSize="md">
                 <Image
-                  src="https://i.imgur.com/XRpjxCa.jpg"
+                  src="https://i.imgur.com/nsmhLsc.jpg"
                   boxSize={['1em', '3em', '6em']}
-                  alt="University of Southampton, Faculty of Health Sciences"
+                  alt=" The European Spine Journal"
                 />
               </Tooltip>
               <VStack alignItems="flex-start">
@@ -298,10 +325,10 @@ const CareerEducation = () => {
                     Article: &quot;Shared decision-making in back pain
                     consultations: an illusion or reality?&quot;
                   </Heading>
-                  <Text>(2014)</Text>
+                  <Text color="#55595b">(2014)</Text>
                 </HStack>
                 <HStack alignItems="flex-start">
-                  <Heading size="sm" pl="45px">
+                  <Heading pl="30px" size="md" pb="0.5em" color="#55595b">
                     The European Spine Journal
                   </Heading>
                   <Button
@@ -316,16 +343,14 @@ const CareerEducation = () => {
                 </HStack>
               </VStack>
             </HStack>
+            <Divider mt="20px" />
 
             <HStack mt="1em">
-              <Tooltip
-                label="University of Southampton, Faculty of Health Sciences"
-                fontSize="md"
-              >
+              <Tooltip label="The Journal of Hand Therapy" fontSize="md">
                 <Image
-                  src="https://i.imgur.com/XRpjxCa.jpg"
+                  src="https://i.imgur.com/ksb10cS.jpg"
                   boxSize={['1em', '3em', '6em']}
-                  alt="University of Southampton, Faculty of Health Sciences"
+                  alt="The Journal of Hand Therapy"
                 />
               </Tooltip>
 
@@ -343,10 +368,10 @@ const CareerEducation = () => {
                     about the delivery of a placebo thumb splint in an
                     osteoarthritis rehabilitation trial.&quot;
                   </Heading>
-                  <Text>(2013)</Text>
+                  <Text color="#55595b">(2013)</Text>
                 </HStack>
                 <HStack alignItems="flex-start">
-                  <Heading size="sm" pl="45px">
+                  <Heading pl="30px" size="md" pb="0.5em" color="#55595b">
                     The Journal of Hand Therapy
                   </Heading>
                   <Button
@@ -400,13 +425,17 @@ const CareerEducation = () => {
                   >
                     Software Engineering Immersive
                   </Heading>
-                  <Text>(09-12/2022)</Text>
+                  <Text color="#55595b">(09-12/2022)</Text>
                 </HStack>
-                <Heading pl="30px" size="sm">
+                <Heading pl="30px" size="md" pb="0.5em" color="#55595b">
+                  General Assembly, London
+                </Heading>
+                <Heading pl="30px" size="sm" pb="0.5em" color="#55595b">
                   Certificate of completion
                 </Heading>
               </VStack>
             </HStack>
+            <Divider />
 
             <HStack mt="1em">
               <Tooltip
@@ -430,14 +459,18 @@ const CareerEducation = () => {
                   >
                     MSc Physiotherapy
                   </Heading>
-                  <Text>(2011-2013)</Text>
+                  <Text color="#55595b">(2011-2013)</Text>
                 </HStack>
-                <Heading pl="30px" size="sm">
+                <Heading pl="30px" size="md" pb="0.5em" color="#55595b">
+                  University of Southampton, Faculty of Heath Sciences
+                </Heading>
+                <Heading pl="30px" size="sm" color="#55595b" pb="0.5em">
                   {' '}
                   Merit
                 </Heading>
               </VStack>
             </HStack>
+            <Divider />
 
             <HStack mt="1em">
               <Tooltip label="Cardiff University" fontSize="md">
@@ -458,9 +491,12 @@ const CareerEducation = () => {
                   >
                     BSc Biomedical Science
                   </Heading>
-                  <Text>(2006-2009)</Text>
+                  <Text color="#55595b">(2006-2009)</Text>
                 </HStack>
-                <Heading pl="30px" size="sm">
+                <Heading pl="30px" size="md" pb="0.5em" color="#55595b">
+                  University of Cardiff, School of Biosciences
+                </Heading>
+                <Heading pl="30px" size="sm" color="#55595b">
                   2.1 Hons
                 </Heading>
               </VStack>

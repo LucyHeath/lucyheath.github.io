@@ -4,7 +4,16 @@ const InterestsSection = () => {
   const slides = [
     { url: 'https://i.imgur.com/MKE7fUA.jpg', title: 'Paragliding' },
     { url: 'https://i.imgur.com/qFK5oEx.jpg', title: 'Speedflying' },
-    { url: 'https://i.imgur.com/SM3rgJ1.jpg', title: 'Diving' }
+    { url: 'https://i.imgur.com/1fR5Bxp.jpg', title: 'Hiking in the Alps' },
+    { url: 'https://i.imgur.com/ChN3y9R.jpg', title: 'Climbing' },
+    { url: 'https://i.imgur.com/s0Vwmbz.jpg', title: 'Kitesurfing' },
+    { url: 'https://i.imgur.com/Kn5fSdV.jpg', title: 'Mountaineering' },
+    { url: 'https://i.imgur.com/s2v2oKg.jpg', title: 'Skiing' },
+    { url: 'https://i.imgur.com/bdgdpsT.jpg', title: 'Iceclimbing' },
+    { url: 'https://i.imgur.com/SM3rgJ1.jpg', title: 'Diving' },
+    { url: 'https://i.imgur.com/UizLd5H.jpg', title: 'Gig Rowing' },
+    { url: 'https://i.imgur.com/pdICINh.jpg', title: 'High Mountaineering' },
+    { url: 'https://i.imgur.com/9w4bJIR.jpg', title: 'Surfing' }
   ]
 
   const containerStyles = {

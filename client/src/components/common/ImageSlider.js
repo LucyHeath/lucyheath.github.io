@@ -131,6 +131,7 @@ const ImageSlider = ({ slides, parentWidth }) => {
             key={slideIndex}
             style={dotStyle}
             onClick={() => goToSlide(slideIndex)}
+            pl="10px"
           >
             &#8413;
           </Box>

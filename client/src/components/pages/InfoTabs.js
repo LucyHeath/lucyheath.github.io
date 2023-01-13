@@ -22,7 +22,8 @@ import {
   FaNodeJs,
   FaPython,
   FaSlack,
-  FaDatabase
+  FaDatabase,
+  FaGitAlt
 } from 'react-icons/fa'
 import { IoLogoCss3, IoLogoJavascript } from 'react-icons/io'
 import { BsFillBootstrapFill } from 'react-icons/bs'
@@ -37,7 +38,10 @@ import {
   SiYarn,
   SiNpm,
   SiTrello,
-  SiZoom
+  SiZoom,
+  SiNetlify,
+  SiExpress,
+  SiWire
 } from 'react-icons/si'
 import { FcCommandLine } from 'react-icons/fc'
 
@@ -138,6 +142,26 @@ const InfoTabs = () => {
                     size="lg"
                     variant="outline"
                     icon={<FaReact />}
+                    target="_blank"
+                  />
+                </Tooltip>
+                <Tooltip label="Node.js" fontSize="md">
+                  <IconButton
+                    colorScheme="#ffffff"
+                    aria-label="Node.js"
+                    size="lg"
+                    variant="outline"
+                    icon={<FaNodeJs />}
+                    target="_blank"
+                  />
+                </Tooltip>
+                <Tooltip label="Express" fontSize="md">
+                  <IconButton
+                    colorScheme="#ffffff"
+                    aria-label="Express"
+                    size="lg"
+                    variant="outline"
+                    icon={<SiExpress />}
                     target="_blank"
                   />
                 </Tooltip>
@@ -280,6 +304,17 @@ const InfoTabs = () => {
                     target="_blank"
                   />
                 </Tooltip>
+                <Tooltip label="Git" fontSize="md">
+                  <IconButton
+                    colorScheme="#ffffff"
+                    aria-label="Git"
+                    size="lg"
+                    variant="outline"
+                    icon={<FaGitAlt />}
+                    target="_blank"
+                  />
+                </Tooltip>
+
                 <Tooltip label="Chrome Dev Tools" fontSize="md">
                   <IconButton
                     colorScheme="#ffffff"
@@ -297,6 +332,16 @@ const InfoTabs = () => {
                     size="lg"
                     variant="outline"
                     icon={<SiHeroku />}
+                    target="_blank"
+                  />
+                </Tooltip>
+                <Tooltip label="Netlify" fontSize="md">
+                  <IconButton
+                    colorScheme="#ffffff"
+                    aria-label="Netlify"
+                    size="lg"
+                    variant="outline"
+                    icon={<SiNetlify />}
                     target="_blank"
                   />
                 </Tooltip>
@@ -330,6 +375,17 @@ const InfoTabs = () => {
                     target="_blank"
                   />
                 </Tooltip>
+                <Tooltip label="Excalidraw" fontSize="md">
+                  <IconButton
+                    colorScheme="#ffffff"
+                    aria-label="Excalidraw"
+                    size="lg"
+                    variant="outline"
+                    icon={<SiWire />}
+                    target="_blank"
+                  />
+                </Tooltip>
+
                 <Tooltip label="Command Line" fontSize="md">
                   <IconButton
                     colorScheme="#ffffff"
@@ -377,7 +433,7 @@ const InfoTabs = () => {
                 &quot;
               </chakra.span>
               I&apos;ve demonstrated an exemplary aptitude for{' '}
-              <chakra.span fontWeight="bold">rapid problemsolving</chakra.span>
+              <chakra.span fontWeight="bold">rapid problem solving</chakra.span>
               ,&nbsp;
               <chakra.span fontWeight="bold">team working</chakra.span>,{' '}
               <chakra.span fontWeight="bold">communication</chakra.span> etc
