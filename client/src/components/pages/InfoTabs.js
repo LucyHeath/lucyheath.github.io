@@ -473,6 +473,9 @@ const InfoTabs = () => {
                 (16/09/-16/12/2022)
               </Text>
             </HStack>
+            <Heading pl="105px" size="md" pb="0.5em" color="#55595b">
+              General Assembly, London
+            </Heading>
 
             <Divider />
             <Text pt="3em" textColor="#55595b" lineHeight={'2em'} mx="50px">
