@@ -14,7 +14,8 @@ const TypeWriterHero = () => {
             ],
             autoStart: true,
             loop: true,
-            pauseFor: 1000
+            pauseFor: 500,
+            delay: 30
           }}
         />
       </Heading>
