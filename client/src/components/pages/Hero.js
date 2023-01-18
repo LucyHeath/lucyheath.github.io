@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import {
   Avatar,
   HStack,
@@ -6,8 +5,7 @@ import {
   IconButton,
   chakra,
   Tooltip,
-  Divider,
-  Box
+  Divider
 } from '@chakra-ui/react'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import TypeWriterHero from '../common/TypeWriterHero'
@@ -38,14 +36,14 @@ const Hero = () => {
         pr={['6em']}
       >
         <TypeWriterHero />
-        <VStack w="900px">
+        <VStack alignItems="flex-start" w="800px ">
           <Divider />
-          <HStack>
+          <HStack pt="1em" pl="1em">
             <Tooltip label="GitHub" fontSize="md">
               <chakra.span>
                 <IconButton
                   mr={'1em'}
-                  colorScheme="#ffffff"
+                  color="white"
                   aria-label="GitHub"
                   size="lg"
                   variant="outline"
@@ -59,7 +57,7 @@ const Hero = () => {
             <Tooltip label="LinkedIn" fontSize="md">
               <chakra.span>
                 <IconButton
-                  colorScheme="grey"
+                  color="white"
                   aria-label="LinkedIn"
                   size="lg"
                   variant="outline"

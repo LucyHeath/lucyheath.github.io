@@ -1,5 +1,5 @@
 import Typewriter from 'typewriter-effect'
-import { Box, Heading, Divider } from '@chakra-ui/react'
+import { Box, Heading } from '@chakra-ui/react'
 const TypeWriterHero = () => {
   return (
     <Box>

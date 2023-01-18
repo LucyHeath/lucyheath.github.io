@@ -1,6 +1,5 @@
-/* eslint-disable no-unused-vars */
 import { ChakraProvider } from '@chakra-ui/react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 
 import Projects from './components/pages/Projects'
 import InfoTabs from '../src/components/pages/InfoTabs'

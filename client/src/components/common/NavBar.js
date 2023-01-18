@@ -1,9 +1,15 @@
 import { HStack, Text } from '@chakra-ui/react'
 import { HashLink } from 'react-router-hash-link'
-
 const Navbar = () => {
   return (
-    <HStack backgroundColor="#ffffff" px={('1em', '3em', '6em')} py={['1em']}>
+    <HStack
+      position="fixed"
+      zIndex="200"
+      w="100%"
+      backgroundColor="#ffffff"
+      px={('1em', '3em', '6em')}
+      py={['1em']}
+    >
       <HashLink smooth to="/#lh">
         <Text fontWeight="bold" px={['0.5em']} color="#55595b">
           LH
