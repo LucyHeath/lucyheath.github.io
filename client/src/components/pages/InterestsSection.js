@@ -1,4 +1,4 @@
-import { Text, VStack, Heading, Divider, Box, chakra } from '@chakra-ui/react'
+import { Text, Heading, Divider, Box, chakra } from '@chakra-ui/react'
 import ImageSlider from '../common/ImageSlider'
 const InterestsSection = () => {
   const slides = [
@@ -17,27 +17,42 @@ const InterestsSection = () => {
   ]
 
   const containerStyles = {
-    width: '500px',
-    height: '450px',
     margin: '0 auto'
   }
 
   return (
-    <VStack
+    <Box
       id="interests"
       bgColor="#375b6d"
-      px={('1em', '3em', '6em')}
-      py={['3em', '5em', '8em']}
+      px={['1em', '3em', '6em']}
+      py={['1em', '5em', '8em']}
       alignItems="flex-start"
     >
-      <Heading pl="30px" pb="0.5em" textColor="white">
+      <Heading
+        color={'white'}
+        pb="0.5em"
+        pl={['0px', '30px']}
+        textAlign={['center', 'left']}
+      >
         My Adventures
       </Heading>
       <Divider />
-      <Box style={containerStyles} py="50px">
-        <ImageSlider slides={slides} parentWidth={500} />
+      <Box
+        style={containerStyles}
+        width={['340px', '600px']}
+        height={['300px', '550px']}
+        py="50px"
+      >
+        <ImageSlider slides={slides} parentWidth={[600]} />
       </Box>
-      <Text color="white" pt="4em" lineHeight={'2em'} mx="50px">
+      <Text
+        color="white"
+        pt={['1em', '4em']}
+        px={['1em', '0em']}
+        lineHeight={'2em'}
+        mx={['5px', '50px']}
+        fontSize={['sm', '2xl']}
+      >
         <chakra.span fontWeight="bold">&quot;</chakra.span>I enjoy adventure and
         spend most of my spare time outdoor climbing, surfing or kitesurfing
         (level 3 advanced kiteboarder) at home in Cornwall, diving in warmer
@@ -48,7 +63,7 @@ const InterestsSection = () => {
         and hold the Deans Chorister Award.
         <chakra.span fontWeight="bold">&quot;</chakra.span>
       </Text>
-    </VStack>
+    </Box>
   )
 }
 export default InterestsSection

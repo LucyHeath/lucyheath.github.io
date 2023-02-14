@@ -2,28 +2,39 @@ import {
   Divider,
   Text,
   Heading,
-  VStack,
+  Box,
   chakra,
   Tooltip,
-  HStack,
+  Stack,
   IconButton
 } from '@chakra-ui/react'
 import { HashLink } from 'react-router-hash-link'
 import { AiOutlineMail, AiFillLinkedin } from 'react-icons/ai'
 const ContactSection = () => {
   return (
-    <VStack
-      px={('1em', '3em', '6em')}
-      py={['3em', '5em', '8em']}
+    <Box
+      px={['1em', '3em', '6em']}
+      py={['1em', '5em', '8em']}
       alignItems="flex-start"
       id="contact"
     >
-      <Heading pl="30px" pb="0.5em" color="#55595b">
+      <Heading
+        pb="0.5em"
+        color="#55595b"
+        pl={['0px', '30px']}
+        textAlign={['center', 'left']}
+      >
         Contact Me
       </Heading>
       <Divider />
-      <HStack>
-        <Heading pt="2em" size="md" pl="45px" color="#55595b">
+      <Stack>
+        <Text
+          textAlign={['center', 'left']}
+          size={['sm', 'lg']}
+          pt="2em"
+          color="#55595b"
+          pl={['0px', '45px']}
+        >
           Reach me at&nbsp;
           <Tooltip label="LinkedIn" fontSize="md">
             <chakra.span>
@@ -53,21 +64,23 @@ const ContactSection = () => {
               />
             </chakra.span>
           </Tooltip>
-        </Heading>
-      </HStack>
+        </Text>
+      </Stack>
 
       <HashLink smooth to="/#lh">
         <Text
           fontWeight="bold"
-          pl="45px"
+          pl={['0px', '45px']}
           color="#55595b"
           pt="2em"
           textDecoration="underline"
+          fontSize={['sm', 'lg']}
+          textAlign={['center', 'left']}
         >
           Back to top
         </Text>
       </HashLink>
-    </VStack>
+    </Box>
   )
 }
 

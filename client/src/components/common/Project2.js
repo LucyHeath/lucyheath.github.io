@@ -32,21 +32,22 @@ const Project2 = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   return (
     <Card
-      maxHeight={'750px'}
-      maxWidth={'600px'}
+      maxHeight={['900', '750px']}
+      maxWidth={['380px', '600px']}
       mx="3em"
-      px="2em"
-      py="2em"
-      my="2em"
+      px={['1em', '2em']}
+      py={['1em', '2em']}
+      mt={['0em', '2em']}
+      mb={['0em', '2em']}
       backgroundColor="#0e3849"
     >
-      <CardBody>
+      <CardBody p={['0px', '20px']}>
         <Image
           src="https://i.imgur.com/QFKHgQg.png"
           alt="Bored?"
           borderRadius="lg"
-          height={'330px'}
-          maxWidth={'500px'}
+          height={['300px', '330px']}
+          maxWidth={['340px', '500px']}
           m="0px"
         />
         <Stack mt="6" spacing="3">
@@ -80,7 +81,7 @@ const Project2 = () => {
           </Text>
         </Stack>
       </CardBody>
-      <Divider />
+      <Divider pt={['10px']} />
       <CardFooter>
         <ButtonGroup spacing="2">
           <Button variant="solid" color="#0e3849" onClick={onOpen}>

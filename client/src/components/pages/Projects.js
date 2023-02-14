@@ -8,19 +8,26 @@ const ProjectCards = () => {
   return (
     <Box
       id="projects"
-      px={('1em', '3em', '6em')}
-      py={['3em', '5em', '8em']}
+      px={('0em', '3em', '6em')}
+      py={['1em', '5em', '8em']}
       bgColor="#375b6d"
     >
-      <Heading pl="30px" textColor={'white'} pb="0.5em">
+      <Heading
+        pl={['0px', '30px']}
+        textColor={'white'}
+        pb={['0em', '0.5em']}
+        textAlign={['center', 'left']}
+      >
         My Projects
       </Heading>
-      <Divider />
+      <Divider mb={['1em', '0em']} />
       <SimpleGrid
         columns={{ xs: 12, sm: 12, md: 6, lg: 4 }}
-        pt="2rem"
         spacing={6}
-        templateColumns="repeat(auto-fill, minmax(650px, 1fr))"
+        templateColumns={[
+          'repeat(auto-fill, minmax(100px, 1fr))',
+          'repeat(auto-fill, minmax(650px, 1fr))'
+        ]}
         gap={10}
         justifyItems="center"
         px="40px"

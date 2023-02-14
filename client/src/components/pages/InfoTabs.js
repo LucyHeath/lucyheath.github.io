@@ -12,7 +12,8 @@ import {
   Image,
   HStack,
   IconButton,
-  Tooltip
+  Tooltip,
+  Hide
 } from '@chakra-ui/react'
 
 import { AiFillHtml5, AiFillGithub, AiFillChrome } from 'react-icons/ai'
@@ -49,29 +50,30 @@ const InfoTabs = () => {
   return (
     <Box
       backgroundColor={'white'}
-      px={('1em', '3em', '6em')}
+      px={['1em', '6em', '0em']}
       py={['3em', '5em', '8em']}
+      mx={['1em', '3em', '8em']}
     >
       <Tabs isFitted variant="enclosed">
         <TabList mb="1em">
           <Tab color="#55595b" fontWeight="bold">
-            <Heading>About Me</Heading>
+            <Heading size={['sm', 'xl']}>About Me</Heading>
           </Tab>
           <Tab color="#55595b" fontWeight="bold">
-            <Heading>My Skills</Heading>
+            <Heading size={['sm', 'xl']}>My Skills</Heading>
           </Tab>
           <Tab color="#55595b" fontWeight="bold">
-            <Heading>My Experience</Heading>
+            <Heading size={['sm', 'xl']}>My Experience</Heading>
           </Tab>
         </TabList>
         <TabPanels>
           <TabPanel>
             <Text
               color="#55595b"
-              // textColor="#55595b"
-              pt="4em"
+              pt={['1em', '4em']}
               lineHeight={'2em'}
-              mx="50px"
+              mx={['0px', '50px']}
+              fontSize={['sm', '2xl']}
             >
               <chakra.span color="#55595b" fontWeight="bold">
                 &quot;
@@ -94,17 +96,36 @@ const InfoTabs = () => {
             </Text>
           </TabPanel>
           <TabPanel>
-            <Heading size="lg" textColor="#55595b" pb="0.5em" pt="2em">
+            <Heading
+              size={['sm', 'lg']}
+              textColor="#55595b"
+              pb="0.5em"
+              pt="2em"
+            >
               Technical Skills
             </Heading>
             <Divider mb="2em" />
-            <HStack my={'2em'}>
-              <Text ml="50px" mr="50px" color="#55595b">
+            <HStack
+              my={('1em', '2em')}
+              mx={('1em', '0em')}
+              flexDirection={['column', 'row']}
+            >
+              <Text
+                ml={['0px', '50px']}
+                mr={['0px', '50px']}
+                color="#55595b"
+                mb={['10px', '0px']}
+                fontSize={['sm', 'md', 'xl']}
+              >
                 <chakra.span color="#55595b" fontWeight="bold">
                   Frontend:
                 </chakra.span>{' '}
               </Text>
-              <HStack>
+              <HStack
+                justifyContent="center"
+                flexDirection={['row']}
+                flexWrap={['wrap', 'nowrap']}
+              >
                 <Tooltip label="HTML5" fontSize="md">
                   <IconButton
                     colorScheme="#ffffff"
@@ -197,13 +218,23 @@ const InfoTabs = () => {
                 </Tooltip>
               </HStack>
             </HStack>
-            <HStack mb={'2em'}>
-              <Text ml="50px" mr="53px" color="#55595b">
+            <HStack flexDirection={['column', 'row']} mb={'2em'}>
+              <Text
+                ml={['0px', '50px']}
+                mr={['0px', '50px']}
+                color="#55595b"
+                mb={['10px', '0px']}
+                fontSize={['sm', 'md', 'xl']}
+              >
                 <chakra.span color="#55595b" fontWeight="bold">
                   Backend:
                 </chakra.span>
               </Text>
-              <HStack>
+              <HStack
+                justifyContent="center"
+                flexDirection={['row']}
+                flexWrap={['wrap', 'nowrap']}
+              >
                 <Tooltip label="Node.js" fontSize="md">
                   <IconButton
                     colorScheme="#ffffff"
@@ -266,14 +297,25 @@ const InfoTabs = () => {
                 </Tooltip>
               </HStack>
             </HStack>
-            <HStack mb={'1em'}>
-              <Text ml="50px" mr="78px" color="#55595b">
+            <HStack flexDirection={['column', 'row']} mb={'1em'}>
+              <Text
+                ml={['0px', '50px']}
+                mr={['0px', '50px']}
+                color="#55595b"
+                mb={['10px', '0px']}
+                pr={['0px', '25px']}
+                fontSize={['sm', 'md', 'xl']}
+              >
                 <chakra.span color="#55595b" fontWeight="bold">
                   {' '}
                   Tools:
                 </chakra.span>
               </Text>
-              <HStack>
+              <HStack
+                justifyContent="center"
+                flexDirection={['row']}
+                flexWrap={['wrap', 'nowrap']}
+              >
                 <Tooltip label="Insomnia" fontSize="md">
                   <IconButton
                     colorScheme="#ffffff"
@@ -419,7 +461,7 @@ const InfoTabs = () => {
               </HStack>
             </HStack>
             <Heading
-              size="lg"
+              size={['sm', 'lg']}
               mt={'2em'}
               textColor="#55595b"
               pb="0.5em"
@@ -428,7 +470,13 @@ const InfoTabs = () => {
               Soft Skills
             </Heading>
             <Divider />
-            <Text my={'2em'} color="#55595b" lineHeight={'2em'} mx="50px">
+            <Text
+              fontSize={['sm', '2xl']}
+              my={['1em', '2em']}
+              color="#55595b"
+              lineHeight={'2em'}
+              mx={['5px', '50px']}
+            >
               <chakra.span color="#55595b" fontWeight="bold">
                 &quot;
               </chakra.span>
@@ -460,25 +508,35 @@ const InfoTabs = () => {
             </Text>
           </TabPanel>
           <TabPanel>
-            <HStack pb="0.5em" pt="4em">
-              <Image
-                src="https://i.imgur.com/jMGOSzI.png"
-                boxSize={['1em', '3em', '4em']}
-                alt="General Assembly icon"
-              />
-              <Heading size="lg" px="1em" textColor="#55595b">
+            <HStack pb={['1em', '0.5em']} pt={['1em', '4em']}>
+              <Tooltip label="General Assembly, London" fontSize="md">
+                <Image
+                  src="https://i.imgur.com/jMGOSzI.png"
+                  boxSize={['3em', '3em', '4em']}
+                  alt="General Assembly icon"
+                />
+              </Tooltip>
+              <Heading size={['sm', 'lg']} px="1em" textColor="#55595b">
                 Software Engineering Immersive Programme
               </Heading>
-              <Text textColor="#55595b" pb="5px">
+              <Text fontSize={['xs', 'md']} textColor="#55595b" pb="5px">
                 (16/09/-16/12/2022)
               </Text>
             </HStack>
-            <Heading pl="105px" size="md" pb="0.5em" color="#55595b">
-              General Assembly, London
-            </Heading>
+            <Hide below="sm">
+              <Heading pl="105px" size="md" pb="0.5em" color="#55595b">
+                General Assembly, London
+              </Heading>
+            </Hide>
 
             <Divider />
-            <Text pt="3em" textColor="#55595b" lineHeight={'2em'} mx="50px">
+            <Text
+              pt={['1em', '3em']}
+              textColor="#55595b"
+              lineHeight={'2em'}
+              mx={['5px', '50px']}
+              fontSize={['sm', '2xl']}
+            >
               A{' '}
               <chakra.span fontWeight="bold">
                 12 week 9-5 intensive programme

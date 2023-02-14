@@ -9,7 +9,6 @@ const sliderStyles = {
 const slideStyles = {
   width: '100%',
   height: '100%',
-  borderRadius: '10px',
   backgroundPosition: 'center',
   backgroundSize: 'cover'
 }
@@ -18,8 +17,7 @@ const dotStyle = {
   margin: '0 3px',
   color: 'white',
   margin: '0',
-  cursor: 'pointer',
-  fontSize: '20px'
+  cursor: 'pointer'
 }
 
 const dotContainerStyles = {
@@ -103,7 +101,11 @@ const ImageSlider = ({ slides, parentWidth }) => {
   }, [goToNext])
 
   return (
-    <Box mt={'2em'} style={sliderStyles}>
+    <Box
+      mt={['0em', '2em']}
+      borderRadius={['0px', '10px']}
+      style={sliderStyles}
+    >
       <Box>
         <Box style={leftArrowStyles} onClick={goToPrevious}>
           〈
@@ -124,12 +126,12 @@ const ImageSlider = ({ slides, parentWidth }) => {
           ))}
         </Box>
       </Box>
-
       <Box style={dotContainerStyles}>
         {slides.map((slide, slideIndex) => (
           <Box
             key={slideIndex}
             style={dotStyle}
+            fontSize={['8px', '20px']}
             onClick={() => goToSlide(slideIndex)}
             pl="10px"
           >

@@ -2,8 +2,15 @@ import Typewriter from 'typewriter-effect'
 import { Box, Heading } from '@chakra-ui/react'
 const TypeWriterHero = () => {
   return (
-    <Box>
-      <Heading pl="30px" textColor="white" size={['xl']} pb="0.5em">
+    <Box alignSelf={['center', 'flex-start']}>
+      <Heading
+        as="h1"
+        pl="30px"
+        textColor="white"
+        size={['md', '2xl']}
+        pb="0.5em"
+        pt={['1.5em', '0em']}
+      >
         <Typewriter
           options={{
             strings: [

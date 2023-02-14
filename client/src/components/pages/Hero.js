@@ -13,7 +13,6 @@ const Hero = () => {
   return (
     <HStack
       id="lh"
-      px={('1em', '3em', '6em')}
       py={['3em', '5em', '8em']}
       justifyContent="center"
       flexDirection={['column', 'row']}
@@ -33,10 +32,10 @@ const Hero = () => {
         flexWrap={['wrap', 'nowrap']}
         ml={['1em', '3em', '6em']}
         mr={['1em', '6em', '6em']}
-        pr={['6em']}
+        pr={['0em', '6em']}
       >
         <TypeWriterHero />
-        <VStack alignItems="flex-start" w="800px ">
+        <VStack alignItems={['center', 'flex-start']} w="800px ">
           <Divider />
           <HStack pt="1em" pl="1em">
             <Tooltip label="GitHub" fontSize="md">
